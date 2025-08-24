@@ -16,13 +16,13 @@ const Navbar = () => {
           <span className="inline-flex h-7 w-7 items-center justify-center ">
             <img src={logo}></img>
           </span>
-          <span className="text-[#F69D25] text-2xl font-orbitron">MANTHAN'25</span>
+          <span className="text-[#F69D25] text-2xl font-orbitron"><Link to="/">MANTHAN'25</Link></span>
         </a>
 
         {/* Desktop Navbar */}
         <nav className="hidden md:flex items-center gap-6 text-sm">
           <ul className="flex items-center gap-4">
-            <li className="text-slate-300 font-semibold hover:text-[#FAC918]"><a href="#about">About</a></li>
+            <li className="text-slate-300 font-semibold hover:text-[#FAC918]"><a href="about">About</a></li>
             <li className="text-slate-300 font-semibold hover:text-[#FAC918]"><a href="#">Gallery</a></li>
             <li className="text-slate-300 font-semibold hover:text-[#FAC918]"><a href="#faq">FAQ</a></li>
             <li className="text-slate-300 font-semibold hover:text-[#FAC918]"><a href="#contact">Contact</a></li>
