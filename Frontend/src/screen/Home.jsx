@@ -5,50 +5,45 @@ import Navbar from "../components/Navbar";
 import { Mail, Phone } from "lucide-react";
 import logo from "../assets/urlLogo.png";
 import Footer from "../components/Footer";
+import mainImage from "../assets/danger_20250825_204323_0000_page-0001.jpg";
 
-const CATEGORIES = [
-  "Hackathon",
-  "Coding",
-  "Robotics",
-  "Design",
-  "Gaming",
-  "Cultural",
-  "Workshops",
-  "Talks",
-  "Sports",
-  "Quiz",
+const homeEvents = [
+  {
+    src: "src/assets/DSC05692.JPG",
+    title: "Celebrity Night",
+  },
+  "src/assets/DSC05692.JPG",
+  "src/assets/DSC05692.JPG",
+  "src/assets/DSC05692.JPG",
+  "src/assets/DSC05692.JPG",
+]
+
+const team = [
+  {
+    title: "Faculty Coordinators",
+    members: ["Prof. Anil Sharma (Head Coordinator)"],
+  },
+  {
+    title: "Executive Core Committee",
+    members: ["Pranav Lata", "Jagrati Kumawat", "Ashutosh Yadav", "Kanishk Gupta"],
+  },
+  {
+    title: "Technical Coordinators",
+    members: ["Rajeev Prajapat", "Kishan Singh Tanwar", "Anurag Kumawat", "Ishan Jangid"],
+  },
+  {
+    title: "Design & Creative Team",
+    members: ["Krish Kumawat", "Mouli Pandey"],
+  },
+  {
+    title: "Event Management Team",
+    members: ["Navya Bhatt", "Kanishk Purohit"],
+  },
+  {
+    title: "Hospitality & Support Team",
+    members: ["Arifa Khan", "Vaibhav Vashishtha", "Sakshi Singh"],
+  },
 ];
-
-const TYPES = ["Team", "Individual"];
-
-function genEvents() {
-  const base = new Date();
-  base.setHours(10, 0, 0, 0);
-
-  // let arr = [];
-  const arr = [{
-    id: 1,
-    title: `Kabbadi`,
-    category: "Sports",
-    type: "Team",
-    date: new Date().toDateString(),
-    durationMins: 60,
-    location: "Main Auditorium",
-    tags: ["Onsite", "Team", "Prize money"],
-    short: "Lorem ipsum dolor sit amet, ship an MVP or perform on stage.",
-    description:
-      "This is a sample description. Replace with real copy from your CMS. Includes rules, evaluation, and contact details.",
-    prizes: "₹15,000 + goodies",
-    poster: `https://placehold.co/600x360?text=${encodeURIComponent(`cat`)}+${1}`,
-    regFee: 99,
-  }];
-
-  return arr;
-}
-
-const ALL_EVENTS = genEvents();
-
-function classNames(...c) { return c.filter(Boolean).join(" "); }
 
 export default function Manthan() {
 
@@ -68,42 +63,6 @@ export default function Manthan() {
     return () => window.removeEventListener("mousemove", handler);
   }, []);
 
-  const navigate = useNavigate();
-  const [query, setQuery] = useState("");
-  const [cat, setCat] = useState("All");
-  const [etype, setEtype] = useState("All");
-  const [day, setDay] = useState("All");
-  const [sort, setSort] = useState("dateAsc");
-
-  const days = useMemo(() => {
-    const set = new Set(
-      ALL_EVENTS.map(e => new Date(e.date).toDateString())
-    );
-    return ["All", ...Array.from(set)];
-  }, []);
-
-  const filtered = useMemo(() => {
-    let res = ALL_EVENTS.slice();
-    if (query.trim()) {
-      const q = query.toLowerCase();
-      res = res.filter(e =>
-        e.title.toLowerCase().includes(q) ||
-        e.category.toLowerCase().includes(q) ||
-        e.tags.join(" ").toLowerCase().includes(q)
-      );
-    }
-    if (cat !== "All") res = res.filter(e => e.category === cat);
-    if (etype !== "All") res = res.filter(e => e.type === etype);
-    if (day !== "All") res = res.filter(e => new Date(e.date).toDateString() === day);
-
-    res.sort((a, b) => {
-      if (sort === "dateAsc") return new Date(a.date) - new Date(b.date);
-      if (sort === "dateDesc") return new Date(b.date) - new Date(a.date);
-      if (sort === "name") return a.title.localeCompare(b.title);
-      return 0;
-    });
-    return res;
-  }, [query, cat, etype, day, sort]);
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -134,36 +93,8 @@ export default function Manthan() {
 
     return () => clearInterval(interval);
   }, []);
-  const team = [
-    {
-      title: "Faculty Coordinators",
-      members: ["Prof. Anil Sharma (Head Coordinator)"],
-    },
-    {
-      title: "Executive Core Committee",
-      members: ["Pranav Lata", "Jagrati Kumawat", "Ashutosh Yadav", "Kanishk Gupta"],
-    },
-    {
-      title: "Technical Coordinators",
-      members: ["Rajeev Prajapat", "Kishan Singh Tanwar", "Anurag Kumawat", "Ishan Jangid"],
-    },
-    {
-      title: "Design & Creative Team",
-      members: ["Krish Kumawat", "Mouli Pandey"],
-    },
-    {
-      title: "Event Management Team",
-      members: ["Navya Bhatt", "Kanishk Purohit"],
-    },
-    {
-      title: "Hospitality & Support Team",
-      members: ["Arifa Khan", "Vaibhav Vashishtha", "Sakshi Singh"],
-    },
-  ];
-
 
   return (
-
     <div className="home min-h-screen text-slate-900 backdrop-blur-sm bg-black/30">
       <Navbar />
       <div className=" h-full w-full overflow-hidden bg-black/30">
@@ -189,16 +120,16 @@ export default function Manthan() {
             </div>
           </div>
           <div className="relative">
-            <div className="rounded-3xl border p-5 shadow-sm border-[#FAC918]">
-              <img alt="festival poster" className="rounded-2xl w-full" src="https://placehold.co/960x560?text=Manthan+Festival" />
+            <div className="rounded-3xl border p-5 shadow-sm border-[#F69D25]">
+              <img alt="festival poster" className="rounded-2xl w-full" src={mainImage} />
               <div className="mt-4 grid grid-cols-3 gap-4 text-center text-sm">
                 <Stat k="50+" v="Events" />
                 <Stat k="2000+" v="Participants" />
                 <Stat k="₹2L+" v="Prizes" />
               </div>
             </div>
-            <div className="absolute bottom-6 -left-6 h-28 w-28 rounded-3xl bg-indigo-100 blur-2xl" />
-            <div className="absolute -top-6 -right-6 h-28 w-28 rounded-3xl bg-violet-100 blur-2xl" />
+            <div className="absolute bottom-6 -left-6 h-20 w-20 rounded-3xl bg-white/40 blur-2xl" />
+            <div className="absolute -top-6 -right-6 h-20 w-20 rounded-3xl bg-white/40 blur-2xl" />
           </div>
         </div>
 
@@ -216,8 +147,9 @@ export default function Manthan() {
         .ring::after { content: ""; position: absolute; inset: -20%; border-radius: 999px; border: 2px solid rgba(255,255,255,.35); transform: rotate(-18deg); }
       `}</style>
       </div>
+
       {/* ABOUT */}
-      <section id="about" className="py-16 md:py-24 bg-black/30">
+      <section id="about" className="py-12 md:py-12 bg-black/30">
         <div className="mx-auto max-w-5xl px-4">
           <h2 className="text-3xl md:text-5xl font-orbitron font-bold text-center bg-gradient-to-br from-[#F69D25] to-[#9529B1] bg-clip-text text-transparent leading-[1.1]">About Manthan</h2>
           <p className="mt-8 text-slate-300 md:text-2xl">Manthan is a multi‑disciplinary college fest featuring technology, culture, design, sports, and more. The platform enables online discovery, easy registrations, e‑tickets, and smooth on‑ground ops.</p>
@@ -229,12 +161,13 @@ export default function Manthan() {
           </ul>
         </div>
       </section>
+
+      {/* COUNTDOWN */}
       <div className="flex flex-col items-center justify-center text-white px-6 bg-black/30">
         <div className="rounded-2xl shadow-[0_0_25px_rgba(255,200,0,0.3)] p-8 md:p-12 w-full max-w-6xl backdrop-blur-sm">
           <h1 className="text-2xl md:text-5xl font-orbitron font-bold text-center mb-10 bg-gradient-to-br from-[#F69D25] to-[#9529B1] bg-clip-text text-transparent leading-[1.1]">
             Time Until Manthan 2k25
           </h1>
-
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <TimeBox label="Days" value={timeLeft.days} />
             <TimeBox label="Hours" value={timeLeft.hours} />
@@ -245,17 +178,39 @@ export default function Manthan() {
       </div>
 
       {/* FILTERS + EVENTS */}
-      <section id="events" className="py-12 md:py-16 bg-black/30">
-        <h2 className="text-3xl md:text-5xl font-orbitron font-bold text-center mb-10 bg-gradient-to-br from-[#F69D25] to-[#9529B1] bg-clip-text text-transparent leading-[1.1]">Events</h2>
+      <section id="events" className="py-12 md:pt-24 bg-black/30">
+        <h2 className="text-3xl md:text-5xl font-orbitron font-bold text-center mb-2 bg-gradient-to-br from-[#F69D25] to-[#9529B1] bg-clip-text text-transparent leading-[1.1]">Events</h2>
         <div className="mx-auto max-w-7xl px-4 pt-4">
-          <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-            {filtered.map(e => (
-              <EventCard key={e.id} e={e} />
-            ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {/* Poster Row (full row span but centered content) */}
+            <div className="col-span-1 sm:col-span-2 lg:col-span-4 flex justify-center py-8">
+              <div className="lg:col-span-2 w-full lg:w-3/4 xl:w-2/3 rounded-2xl overflow-hidden shadow-[0_0_25px_rgba(255,200,0,0.3)] bg-black/30">
+                <div className="aspect-[3/2] w-full">
+                  <img
+                    src={homeEvents[0].src}// apna poster
+                    alt="Main Event Poster"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="py-3 border-t border-[#F69D25] bg-black/70">
+                  <p className="text-2xl text-center text-[#F69D25] font-semibold font-orbitron">{homeEvents[0].title}</p>
+                </div>
+              </div>
+            </div>
+            {/* 🔹 4 Events (2nd row) */}
+            {homeEvents.slice(1).map((event, index) => {
+              return (
+                <EventCard key={index} e={event} />
+              )
+            })}
           </div>
+        </div>
+        <div className="mt-6 flex justify-center items-center gap-3">
+          <BouncyCircle href="/events">View All Events</BouncyCircle>
         </div>
       </section>
 
+      {/* TEAM */}
       <section className="p-6 w-full bg-black/30">
         <h2 className="text-3xl md:text-5xl font-orbitron font-bold text-center mb-10 bg-gradient-to-br from-[#F69D25] to-[#9529B1] bg-clip-text text-transparent leading-[1.1]">Our Team</h2>
         <div className="space-y-6 max-w-7xl mx-auto">
@@ -267,7 +222,6 @@ export default function Manthan() {
               ))}
             </ul>
           </div>
-
           <div className="grid grid-cols-1 gap-6">
             <div className="bg-black/30 rounded-2xl shadow-[0_0_25px_rgba(255,200,0,0.3)] p-6 flex flex-col justify-center items-center">
               <h3 className="text-xl font-semibold mb-2 text-[#F69D25]">{team[1].title}</h3>
@@ -278,7 +232,6 @@ export default function Manthan() {
               </ul>
             </div>
           </div>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {team.slice(2).map((category, idx) => (
               <div
@@ -296,6 +249,7 @@ export default function Manthan() {
           </div>
         </div>
       </section>
+
       {/* FAQ */}
       <section id="faq" className="py-16 md:py-24 bg-black/30">
         <div className="mx-auto max-w-5xl px-4">
@@ -309,8 +263,6 @@ export default function Manthan() {
         </div>
       </section>
 
-      {/* CONTACT */}
-
       <Footer />
     </div>
   );
@@ -318,12 +270,9 @@ export default function Manthan() {
 
 function EventCard({ e }) {
   return (
-    <div className="rounded-2xl overflow-hidden border bg-white hover:shadow-md transition-shadow">
+    <div className="rounded-2xl overflow-hidden shadow-[0_0_25px_rgba(255,200,0,0.3)] bg-black/30 hover:shadow-md transition-shadow">
       <div className="aspect-[16/16] bg-slate-100 overflow-hidden">
-        <img src={e.poster} alt={e.title} className="w-full h-full object-cover" />
-      </div>
-      <div className="p-2">
-        <p className="text-lg text-center text-indigo-700">Kabbadi</p>
+        <img src={e} alt={e} className="w-full h-full object-cover" />
       </div>
     </div>
   );
@@ -331,8 +280,8 @@ function EventCard({ e }) {
 
 function Stat({ k, v }) {
   return (
-    <div className="rounded-xl border p-3">
-      <div className="text-2xl font-bold text-[#FAC918]">{k}</div>
+    <div className="rounded-xl border border-[#F69D25] p-3">
+      <div className="text-2xl font-bold text-[#F69D25]">{k}</div>
       <div className="text-slate-300 text-sm">{v}</div>
     </div>
   );

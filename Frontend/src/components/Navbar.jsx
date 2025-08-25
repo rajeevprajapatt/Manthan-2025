@@ -16,7 +16,7 @@ const Navbar = () => {
           <span className="inline-flex h-7 w-7 items-center justify-center ">
             <img src={logo}></img>
           </span>
-          <span className="text-[#F69D25] text-2xl font-orbitron"><Link to="/">MANTHAN'25</Link></span>
+          <span className="text-[#F69D25] text-lg md:text-2xl font-orbitron"><Link to="/">MANTHAN'25</Link></span>
         </a>
 
         {/* Desktop Navbar */}

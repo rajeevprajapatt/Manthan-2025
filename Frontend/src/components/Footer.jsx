@@ -57,10 +57,10 @@ const Footer = () => {
                             </h1>
                         </div>
 
-                        <div className="mt-12 text-gray-200 px-8">
-                            <h2 className="text-lg font-semibold mb-1">Have Questions?</h2>
+                        <div className="mt-12 text-gray-200 px-5">
+                            <h2 className="text-lg font-semibold mb-1 text-[#F69D25]">Have Questions?</h2>
                             <p className="flex items-center space-x-2">
-                                <Mail className="w-5 h-5 text-indigo-400" />
+                                <Mail className="w-5 h-5 text-[#F69D25]" />
                                 <span>support@manthan2k25.com</span>
                             </p>
                         </div>
