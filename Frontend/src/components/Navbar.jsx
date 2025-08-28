@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "../assets/urlLogo.png";
+// import logo from "../assets/urlLogo.png";
+import logo from "../assets/logo_sbss.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,12 +23,12 @@ const Navbar = () => {
         {/* Desktop Navbar */}
         <nav className="hidden md:flex items-center gap-6 text-sm">
           <ul className="flex items-center gap-4">
-            <li className="text-slate-300 font-semibold hover:text-[#FAC918]"><a href="about">About</a></li>
-            <li className="text-slate-300 font-semibold hover:text-[#FAC918]"><a href="#">Gallery</a></li>
-            <li className="text-slate-300 font-semibold hover:text-[#FAC918]"><a href="#faq">FAQ</a></li>
-            <li className="text-slate-300 font-semibold hover:text-[#FAC918]"><a href="#contact">Contact</a></li>
-            <li className="text-slate-300 font-semibold hover:text-[#FAC918]"><a href="#">Sponsors</a></li>
-            <li className="ml-2 px-3 py-1.5 rounded-2xl bg-indigo-600 text-white"><Link to={"/events"}>Explore</Link></li>
+            <li className="text-slate-300 font-semibold hover:text-[#F69D25]"><a href="about">About</a></li>
+            <li className="text-slate-300 font-semibold hover:text-[#F69D25]"><a href="#">Gallery</a></li>
+            <li className="text-slate-300 font-semibold hover:text-[#F69D25]"><a href="#faq">FAQ</a></li>
+            <li className="text-slate-300 font-semibold hover:text-[#F69D25]"><a href="#contact">Contact</a></li>
+            <li className="text-slate-300 font-semibold hover:text-[#F69D25]"><a href="#">Sponsors</a></li>
+            <li className="p-2 px-3 rounded-2xl bg-black/30 border-2 border-[#F69D25] text-[#F69D25]"><Link to={"/events"}>Explore</Link></li>
           </ul>
         </nav>
 
@@ -35,7 +36,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center gap-3">
           <a
             href="/events"
-            className="px-3 py-1.5 rounded-2xl bg-indigo-600 text-white text-sm"
+            className="px-3 py-1.5 rounded-2xl bg-black/30 border-2 border-[#F69D25] text-[#F69D25] text-sm"
           >
             Explore
           </a>
@@ -60,14 +61,14 @@ const Navbar = () => {
           {["About", "Gallery", "FAQ", "Contact", "Sponsors"].map(
             (item, index) => {
               return (
-                <li key={index} className="text-lg font-semibold border-2 p-2 rounded-xl border-[#FAC918] text-center text-[#FAC918] hover:text-[#FAC918]">
+                <li key={index} className="text-lg font-semibold border-2 p-2 rounded-xl border-slate-300 text-center text-slate-300 hover:text-[#FAC918]">
                   <a href={`#${item.toLowerCase()}`} onClick={toggleMenu}>{item}</a>
                 </li>
               )
             }
           )}
-          <li className="p-2 rounded-xl text-center bg-indigo-600">
-            <Link to="/events" onClick={toggleMenu} className="text-lg font-semibold text-slate-300 hover:text-[#FAC918]">Explore</Link>
+          <li className="p-2 rounded-xl text-center bg-black/30 border-2 border-[#F69D25]">
+            <Link to="/events" onClick={toggleMenu} className="text-lg font-semibold text-[#F69D25] hover:text-[#FAC918]">Explore</Link>
           </li>
         </ul>
       </div>

@@ -7,41 +7,49 @@ import logo from "../assets/urlLogo.png";
 import Footer from "../components/Footer";
 import mainImage from "../assets/danger_20250825_204323_0000_page-0001.jpg";
 
-const homeEvents = [
-  {
+const homeEvents = {
+  img1: {
     src: "src/assets/DSC05692.JPG",
     title: "Celebrity Night",
   },
-  "src/assets/DSC05692.JPG",
-  "src/assets/DSC05692.JPG",
-  "src/assets/DSC05692.JPG",
-  "src/assets/DSC05692.JPG",
-]
+  img2: "src/assets/DSC05692.JPG",
+  img3: "src/assets/DSC05692.JPG",
+  img4: "src/assets/DSC05692.JPG",
+  img5: "src/assets/DSC05692.JPG"
+}
 
 const team = [
   {
-    title: "Faculty Coordinators",
-    members: ["Prof. Anil Sharma (Head Coordinator)"],
+    title: "Head Organizer",
+    members: ["Ms Poonam Poonia"],
   },
   {
-    title: "Executive Core Committee",
-    members: ["Pranav Lata", "Jagrati Kumawat", "Ashutosh Yadav", "Kanishk Gupta"],
+    title: "Conveners",
+    members: ["Mr J.P Bhamaniya", "Ms Divya Mam"],
   },
   {
     title: "Technical Coordinators",
-    members: ["Rajeev Prajapat", "Kishan Singh Tanwar", "Anurag Kumawat", "Ishan Jangid"],
+    members: ["Rajeev Prajapat", "Kishan Singh Tanwar", "Anurag Kumawat"],
   },
   {
-    title: "Design & Creative Team",
-    members: ["Krish Kumawat", "Mouli Pandey"],
+    title: "Ryhthm Club",
+    members: ["Aakash Jangid", "Priyanshi Sharma"],
   },
   {
-    title: "Event Management Team",
-    members: ["Navya Bhatt", "Kanishk Purohit"],
+    title: "Sports Coordinators",
+    members: ["Vinita Choudhary", "Ankit"],
   },
   {
-    title: "Hospitality & Support Team",
-    members: ["Arifa Khan", "Vaibhav Vashishtha", "Sakshi Singh"],
+    title: "Media Coordinators",
+    members: ["Sumit Singh", "Tanmay Mahawar"],
+  },
+  {
+    title: "Innovation Club",
+    members: ["Nisha", "Akshay"],
+  },
+  {
+    title: "Eco-Friendly Club",
+    members: ["Sakshi Verma", "Himani Mishra"],
   },
 ];
 
@@ -163,7 +171,7 @@ export default function Manthan() {
       </section>
 
       {/* COUNTDOWN */}
-      <div className="flex flex-col items-center justify-center text-white px-6 bg-black/30">
+      <div className="flex flex-col items-center justify-center text-white px-6 pt-12 bg-black/30">
         <div className="rounded-2xl shadow-[0_0_25px_rgba(255,200,0,0.3)] p-8 md:p-12 w-full max-w-6xl backdrop-blur-sm">
           <h1 className="text-2xl md:text-5xl font-orbitron font-bold text-center mb-10 bg-gradient-to-br from-[#F69D25] to-[#9529B1] bg-clip-text text-transparent leading-[1.1]">
             Time Until Manthan 2k25
@@ -187,22 +195,23 @@ export default function Manthan() {
               <div className="lg:col-span-2 w-full lg:w-3/4 xl:w-2/3 rounded-2xl overflow-hidden shadow-[0_0_25px_rgba(255,200,0,0.3)] bg-black/30">
                 <div className="aspect-[3/2] w-full">
                   <img
-                    src={homeEvents[0].src}// apna poster
+                    src={homeEvents.img1.src}// apna poster
                     alt="Main Event Poster"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="py-3 border-t border-[#F69D25] bg-black/70">
-                  <p className="text-2xl text-center text-[#F69D25] font-semibold font-orbitron">{homeEvents[0].title}</p>
+                  <p className="text-2xl text-center text-[#F69D25] font-semibold font-orbitron">{homeEvents.img1.title}</p>
                 </div>
               </div>
             </div>
             {/* 🔹 4 Events (2nd row) */}
-            {homeEvents.slice(1).map((event, index) => {
+            {Object.keys(homeEvents).slice(1, 5).map((event, index) => {
               return (
-                <EventCard key={index} e={event} />
+                <EventCard key={index} e={homeEvents[event]} />
               )
             })}
+
           </div>
         </div>
         <div className="mt-6 flex justify-center items-center gap-3">
@@ -270,7 +279,7 @@ export default function Manthan() {
 
 function EventCard({ e }) {
   return (
-    <div className="rounded-2xl overflow-hidden shadow-[0_0_25px_rgba(255,200,0,0.3)] bg-black/30 hover:shadow-md transition-shadow">
+    <div className="rounded-2xl overflow-hidden shadow-[0_0_25px_rgba(255,200,0,0.3)] bg-black/30 transition-shadow">
       <div className="aspect-[16/16] bg-slate-100 overflow-hidden">
         <img src={e} alt={e} className="w-full h-full object-cover" />
       </div>
@@ -326,7 +335,7 @@ function Astronaut({ className = "" }) {
 function BouncyCircle({ children, href }) {
   return (
     <a href={href}
-      className="bouncy relative mt-8 inline-flex text-center items-center justify-center rounded-full px-8 py-3 text-base font-semibold text-[#F69D25] shadow-lg bg-black/40 border border-[#FAC918] backdrop-blur-md"
+      className="bouncy relative mt-8 inline-flex text-center items-center justify-center rounded-full px-8 py-3 text-base font-semibold text-[#F69D25] shadow-lg bg-black/40 border border-[#F69D25] backdrop-blur-md"
     >
       {children}
     </a>

@@ -1,23 +1,20 @@
 import { useNavigate, Link } from 'react-router-dom'
-import logo from '../assets/urlLogo.png'
+// import logo from '../assets/urlLogo.png'
+import logo from "../assets/logo_sbss.png"
 import { Mail, Phone } from "lucide-react";
-import bgVideo from '../assets/bgVideo.mp4'
+// import bgVideo from '../assets/bgVideo.mp4'
+import bgVideo from "../assets/Abstract Connected Dots On Bright Black Background _ Free Stock Video Footage HD 4K.mp4"
 
 const coordinators = [
     {
-        name: "Ms. Jagrati Kumawat",
+        name: "Ansh Kumawat",
         role: "Co-Chair",
-        phone: "+91 9509404898",
+        phone: "+91 9829171329",
     },
     {
-        name: "Mr. Ashutosh Kumar Yadav",
+        name: "Ishan Jangid",
         role: "Co-Chair",
-        phone: "+91 8423447391",
-    },
-    {
-        name: "Mr. Kanishk Gupta",
-        role: "Co-Chair",
-        phone: "+91 9256356496",
+        phone: "+91 8949603232",
     },
 ];
 
@@ -25,14 +22,14 @@ const Footer = () => {
 
 
     return (
-        <div className="relative rounded-t-3xl bg-black/30">
+        <div className="relative rounded-t-3xl bg-black/30 shadow-[0_0_25px_rgba(255,200,0,0.3)]">
             {/* Background video */}
             <video
                 autoPlay
                 muted
                 loop
                 playsInline
-                className="absolute inset-0 w-full h-full object-cover z-0 brightness-70 rounded-t-3xl"
+                className="absolute inset-0 w-full h-full object-cover z-0 brightness-50 rounded-t-3xl"
             >
                 <source src={bgVideo} type="video/mp4" />
             </video>
