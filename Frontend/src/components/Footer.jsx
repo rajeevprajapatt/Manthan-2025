@@ -91,7 +91,7 @@ const Footer = () => {
             {/* Footer */}
             <footer className="border-t relative z-10">
                 <div className="mx-auto max-w-7xl px-4 py-8 text-sm text-slate-200 flex flex-col md:flex-row items-center justify-between gap-3">
-                    <div>© {new Date().getFullYear()} Sri Balaji Shiksha Samiti • Made with ❤</div>
+                    <div>© {new Date().getFullYear()} Sri Balaji Shiksha Samiti, Jaipur</div>
                     <div>
                         Crafted by{" "}
                         <span className="font-bold bg-gradient-to-br from-[#F69D25] to-[#9529B1] bg-clip-text text-transparent leading-[1.1]">

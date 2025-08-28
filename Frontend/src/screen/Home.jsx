@@ -117,14 +117,14 @@ export default function Manthan() {
             <h1 className="mt-4 text-7xl md:text-[170px] font-bold metal-mania bg-gradient-to-br from-[#F69D25] to-[#9529B1] 
   bg-clip-text text-transparent leading-[1.1] shadow-md">MANTHAN 2K25</h1>
             <p className="mt-4 text-[#F69D25] md:text-lg">Tech • Culture • Sports • Workshops • Talks</p>
-            <p className="mt-4 text-[#F69D25] md:text-lg">Discover events, register in seconds, and track all your passes in one place.</p>
+            <p className="mt-4 text-[#F69D25] md:text-lg">Explore events and secure your spot with a quick registration.</p>
             <div className="mt-6 flex items-center gap-3">
               <BouncyCircle href="/events">Explore Events</BouncyCircle>
             </div>
             <div className="mt-6 flex items-center gap-4 text-sm text-slate-300 font-semibold">
-              <div>🎯 Curated Tracks</div>
-              <div>🏆 Prizes & Swag</div>
-              <div>🧾 E‑tickets</div>
+              <div>🎯 Explore Exciting Events</div>
+              <div>🏆 Win Prizes & Swag</div>
+              <div>📅 Register Instantly</div>
             </div>
           </div>
           <div className="relative">
@@ -160,12 +160,13 @@ export default function Manthan() {
       <section id="about" className="py-12 md:py-12 bg-black/30">
         <div className="mx-auto max-w-5xl px-4">
           <h2 className="text-3xl md:text-5xl font-orbitron font-bold text-center bg-gradient-to-br from-[#F69D25] to-[#9529B1] bg-clip-text text-transparent leading-[1.1]">About Manthan</h2>
-          <p className="mt-8 text-slate-300 md:text-2xl">Manthan is a multi‑disciplinary college fest featuring technology, culture, design, sports, and more. The platform enables online discovery, easy registrations, e‑tickets, and smooth on‑ground ops.</p>
-          <ul className="mt-4 grid sm:grid-cols-2 gap-3 text-sm md:text-lg text-slate-300 list-disc list-inside">
-            <li>Unified registrations with OTP/email verification</li>
-            <li>Team & individual formats supported</li>
-            <li>QR‑based check‑in and results publishing</li>
-            <li>Flexible admin CMS for events, slots, judges</li>
+          <p className="mt-8 text-slate-300 md:text-2xl">Manthan is a multi-disciplinary college fest organized by Sri Balaji Shiksha Samiti, Jaipur.
+            The fest features a diverse range of events — from sports, cultural performances, and design showcases to edu-fun activities — open for everyone to participate and celebrate creativity.</p>
+          <ul className="mt-4 grid sm:grid-cols-2 gap-3 text-sm md:text-lg text-slate-300 list-none list-inside">
+            <li>🏆 Sports, cultural, design & edu-fun events</li>
+            <li>💡 Showcase ideas, vision & talent</li>
+            <li>🎁 Win prizes & swags</li>
+            <li>🌟 Open for all participants</li>
           </ul>
         </div>
       </section>
