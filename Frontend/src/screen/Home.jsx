@@ -9,13 +9,13 @@ import mainImage from "../assets/danger_20250825_204323_0000_page-0001.jpg";
 
 const homeEvents = {
   img1: {
-    src: "src/assets/DSC05692.JPG",
+    src: "/images/DSC05692.JPG",
     title: "Celebrity Night",
   },
-  img2: "src/assets/DSC05692.JPG",
-  img3: "src/assets/DSC05692.JPG",
-  img4: "src/assets/DSC05692.JPG",
-  img5: "src/assets/DSC05692.JPG"
+  img2: "/images/DSC05692.JPG",
+  img3: "/images/DSC05692.JPG",
+  img4: "/images/DSC05692.JPG",
+  img5: "/images/DSC05692.JPG"
 }
 
 const team = [
@@ -52,6 +52,7 @@ const team = [
     members: ["Sakshi Verma", "Himani Mishra"],
   },
 ];
+
 
 export default function Manthan() {
 
