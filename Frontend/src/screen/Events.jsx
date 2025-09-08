@@ -35,7 +35,7 @@ function genEvents() {
         title: `Kabbadi`,
         category: "Sports",
         type: "Team",
-        date: '10-12-2025',
+        date: '10-12-2025 9:00 AM',
         durationMins: 60,
         location: "Main Auditorium",
         tags: ["Onsite", "Team", "Prize money"],
@@ -66,12 +66,12 @@ const Events = () => {
 
     const days = useMemo(() => {
         const set = new Set(
-            ALL_EVENTS.map(e => new Date(e.date).toDateString())
+            events.map(e => new Date(e.date).toDateString())
         );
         return ["All", ...Array.from(set)];
     }, []);
     const filtered = useMemo(() => {
-        let res = ALL_EVENTS.slice();
+        let res = events.slice();
         if (query.trim()) {
             const q = query.toLowerCase();
             res = res.filter(e =>
@@ -181,7 +181,14 @@ const Events = () => {
                                     <p className="text-slate-600 text-sm mt-1">{active.short}</p>
                                     <div className="mt-3 grid grid-cols-2 gap-3 text-sm">
                                         <Info k="Type" v={active.type} />
-                                        <Info k="Date" v={new Date(active.date).toLocaleString()} />
+                                        <Info k="Date" v={new Date(active.date).toLocaleString('en-US', {
+                                            hour: 'numeric',
+                                            minute: 'numeric',
+                                            hour12: true,
+                                            month: '2-digit',
+                                            day: '2-digit',
+                                            year: 'numeric'
+                                        })} />
                                         <Info k="Duration" v={`${active.durationMins} mins`} />
                                         <Info k="Location" v={active.location} />
                                         <Info k="Prizes" v={active.prizes} />
@@ -194,10 +201,10 @@ const Events = () => {
                                     </div>
                                     <p className="mt-3 text-sm text-slate-700">{active.description}</p>
                                     <div className="mt-5 flex items-center gap-3">
-                                        {/* <button onClick={() => {
+                                        <button onClick={() => {
                                             setActive(null);
                                             navigate(`/register`, { state: active });
-                                        }} className="px-4 py-2 rounded-xl bg-indigo-600 text-white">Register</button> */}
+                                        }} className="px-4 py-2 rounded-xl bg-indigo-600 text-white">Register</button>
                                         <button onClick={() => setActive(null)} className="px-4 py-2 rounded-xl ring-1 bg-indigo-600 text-slate-300 ring-slate-200">Close</button>
                                     </div>
                                 </div>
@@ -206,7 +213,7 @@ const Events = () => {
                     </div>
                 )}
             </section>
-            <Footer/>
+            <Footer />
         </div>
     )
 }
@@ -221,7 +228,7 @@ function EventCard({ e, onOpen }) {
                     <div className="text-xs inline-flex px-2 py-1 rounded-full bg-indigo-50 text-indigo-700 ring-1 ring-indigo-200">{e.category}</div>
                     <div className="text-xs text-slate-500">{new Date(e.date).toLocaleDateString()}</div>
                 </div>
-                <div className="mt-2 font-semibold leading-tight line-clamp-2 min-h-[3rem]">{e.title}</div>
+                <div className="mt-1 font-semibold leading-tight line-clamp-2 min-h-[3rem]">{e.title}</div>
                 <div className="mt-1 text-sm text-slate-600 line-clamp-2">{e.short}</div>
                 <div className="mt-3 flex items-center justify-between">
                     <div className="text-sm text-slate-700">{e.type}</div>
