@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from '../components/Footer';
+import tempBanner from '../assets/Beige Red Black Illustrative Basketball Tournament Banner .png';
+// import data from '../Data/events.js';
+
+// console.log(data);
+import events from '../Data/Events.js';
+console.log(events);
 
 
 const CATEGORIES = [
@@ -29,7 +35,7 @@ function genEvents() {
         title: `Kabbadi`,
         category: "Sports",
         type: "Team",
-        date: new Date().toDateString(),
+        date: '10-12-2025',
         durationMins: 60,
         location: "Main Auditorium",
         tags: ["Onsite", "Team", "Prize money"],
@@ -37,13 +43,14 @@ function genEvents() {
         description:
             "This is a sample description. Replace with real copy from your CMS. Includes rules, evaluation, and contact details.",
         prizes: "₹15,000 + goodies",
-        poster: `https://placehold.co/600x360?text=${encodeURIComponent(`cat`)}+${1}`,
+        poster: tempBanner,
         regFee: 99,
     }];
 
     return arr;
 }
 const ALL_EVENTS = genEvents();
+// const data = 
 
 function classNames(...c) { return c.filter(Boolean).join(" "); }
 
@@ -206,7 +213,7 @@ const Events = () => {
 function EventCard({ e, onOpen }) {
     return (
         <div className="rounded-2xl overflow-hidden border bg-white hover:shadow-md transition-shadow">
-            <div className="aspect-[16/10] bg-slate-100 overflow-hidden">
+            <div className="aspect-[2/1] bg-slate-100 overflow-hidden">
                 <img src={e.poster} alt={e.title} className="w-full h-full object-cover" />
             </div>
             <div className="p-4">

@@ -6,6 +6,11 @@ import { Mail, Phone } from "lucide-react";
 import logo from "../assets/urlLogo.png";
 import Footer from "../components/Footer";
 import mainImage from "../assets/danger_20250825_204323_0000_page-0001.jpg";
+import SportsPoster from "../assets/Sports-Poster.png";
+import CulturalPoster from "../assets/Cultural-Poster.png";
+import EduFunPoster from "../assets/EduFun-Poster.png";
+// import Design-Poster from "../assets/Design-Poaster.jpg";
+import InnovationPoster from "../assets/Innovation-Poster.png";
 
 const homeEvents = {
   img1: {
@@ -189,31 +194,14 @@ export default function Manthan() {
 
       {/* FILTERS + EVENTS */}
       <section id="events" className="py-12 md:pt-24 bg-black/30">
-        <h2 className="text-3xl md:text-5xl font-orbitron font-bold text-center mb-2 bg-gradient-to-br from-[#F69D25] to-[#9529B1] bg-clip-text text-transparent leading-[1.1]">Events</h2>
+        <h2 className="text-3xl md:text-5xl font-orbitron font-bold text-center mb-10 bg-gradient-to-br from-[#F69D25] to-[#9529B1] bg-clip-text text-transparent leading-[1.1]">Events</h2>
         <div className="mx-auto max-w-7xl px-4 pt-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {/* Poster Row (full row span but centered content) */}
-            <div className="col-span-1 sm:col-span-2 lg:col-span-4 flex justify-center py-8">
-              <div className="lg:col-span-2 w-full lg:w-3/4 xl:w-2/3 rounded-2xl overflow-hidden shadow-[0_0_25px_rgba(255,200,0,0.3)] bg-black/30">
-                <div className="aspect-[3/2] w-full">
-                  <img
-                    src={homeEvents.img1.src}// apna poster
-                    alt="Main Event Poster"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="py-3 border-t border-[#F69D25] bg-black/70">
-                  <p className="text-2xl text-center text-[#F69D25] font-semibold font-orbitron">{homeEvents.img1.title}</p>
-                </div>
-              </div>
-            </div>
             {/* 🔹 4 Events (2nd row) */}
-            {Object.keys(homeEvents).slice(1, 5).map((event, index) => {
-              return (
-                <EventCard key={index} e={homeEvents[event]} />
-              )
-            })}
-
+            <EventCard e={SportsPoster} />
+            <EventCard e={CulturalPoster} />
+            <EventCard e={EduFunPoster} />
+            <EventCard e={InnovationPoster} />
           </div>
         </div>
         <div className="mt-6 flex justify-center items-center gap-3">
@@ -281,7 +269,7 @@ export default function Manthan() {
 
 function EventCard({ e }) {
   return (
-    <div className="rounded-2xl overflow-hidden shadow-[0_0_25px_rgba(255,200,0,0.3)] bg-black/30 transition-shadow">
+    <div className="rounded overflow-hidden shadow-[0_0_25px_rgba(255,200,0,0.3)] bg-black/30 transition-shadow">
       <div className="aspect-[16/16] bg-slate-100 overflow-hidden">
         <img src={e} alt={e} className="w-full h-full object-cover" />
       </div>
