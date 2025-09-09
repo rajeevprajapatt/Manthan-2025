@@ -7,13 +7,11 @@ import bgVideo from "../assets/Abstract Connected Dots On Bright Black Backgroun
 
 const coordinators = [
     {
-        name: "Ansh Kumawat",
-        role: "Co-Chair",
+        name: "Anshu Kumawat",
         phone: "+91 9829171329",
     },
     {
-        name: "Ishan Jangid",
-        role: "Co-Chair",
+        name: "Ishaan Jangid",
         phone: "+91 8949603232",
     },
 ];
@@ -22,7 +20,7 @@ const Footer = () => {
 
 
     return (
-        <div className="relative rounded-t-3xl bg-black/30 shadow-[0_0_25px_rgba(255,200,0,0.3)]">
+        <div id='contact' className="relative rounded-t-3xl bg-black/30 shadow-[0_0_25px_rgba(255,200,0,0.3)]">
             {/* Background video */}
             <video
                 autoPlay
@@ -76,7 +74,7 @@ const Footer = () => {
                                     className="border border-[#F69D25] rounded-xl px-4 py-1 backdrop-blur-md hover:shadow-md transition"
                                 >
                                     <h3 className="text-md font-semibold text-[#F69D25]">{person.name}</h3>
-                                    <p className="text-sm text-gray-300">{person.role}</p>
+                                    {/* <p className="text-sm text-gray-300">{person.role}</p> */}
                                     <p className="flex items-center text-sm text-gray-300 mt-1">
                                         <Phone className="w-4 h-4 mr-2 text-[#F69D25]" />
                                         {person.phone}

@@ -12,48 +12,14 @@ console.log(events);
 
 
 const CATEGORIES = [
-    "Hackathon",
-    "Coding",
-    "Robotics",
-    "Design",
-    "Gaming",
-    "Cultural",
-    "Workshops",
-    "Talks",
     "Sports",
-    "Quiz",
+    "Tech / Innovation",
+    "Food / Lifestyle",
+    "Literary / Intellectual",
+    "Cultural",
 ];
 
 const TYPES = ["Team", "Individual"];
-function genEvents() {
-    const base = new Date();
-    base.setHours(10, 0, 0, 0);
-
-    // let arr = [];
-    const arr = [{
-        id: 1,
-        title: `Kabbadi`,
-        category: "Sports",
-        type: "Team",
-        date: '10-12-2025 9:00 AM',
-        durationMins: 60,
-        location: "Main Auditorium",
-        tags: ["Onsite", "Team", "Prize money"],
-        short: "Lorem ipsum dolor sit amet, ship an MVP or perform on stage.",
-        description:
-            "This is a sample description. Replace with real copy from your CMS. Includes rules, evaluation, and contact details.",
-        prizes: "₹15,000 + goodies",
-        poster: tempBanner,
-        regFee: 99,
-    }];
-
-    return arr;
-}
-const ALL_EVENTS = genEvents();
-// const data = 
-
-function classNames(...c) { return c.filter(Boolean).join(" "); }
-
 
 const Events = () => {
     const navigate = useNavigate();
@@ -92,15 +58,10 @@ const Events = () => {
         });
         return res;
     }, [query, cat, etype, day, sort]);
-    const [timeLeft, setTimeLeft] = useState({
-        days: 0,
-        hours: 0,
-        minutes: 0,
-        seconds: 0,
-    });
+
     return (
-        <div className=''>
-            <Navbar />
+        <div className='' id="home">
+            <Navbar isEvent={true} />
             <div className='bg-black/30'><h1 className=" py-5 text-7xl text-center md:text-9xl font-bold metal-mania bg-gradient-to-br from-[#F69D25] to-[#9529B1] 
   bg-clip-text text-transparent leading-[1.1] shadow-md">MANTHAN 2K25</h1>
             </div>
@@ -108,18 +69,17 @@ const Events = () => {
                 <div className="max-w-4xl bg-black/50 rounded-3xl px-12 shadow-[0_0_25px_rgba(255,200,0,0.3)] py-12 text-center space-y-6">
                     {/* Heading */}
                     <h2 className="text-2xl md:text-3xl font-bold font-orbitron bg-gradient-to-br from-[#F69D25] to-[#9529B1] bg-clip-text text-transparent leading-[1.1]">
-                        For Participation, Fill Out the Google Form
+                        For Participation
                     </h2>
 
                     {/* Caption / Subtext */}
                     <p className="text-base md:text-lg text-gray-300">
                         Be a part of <span className="text-[#FAC918] font-semibold metal-mania">Manthan 2K25 </span>
                         and showcase your talent!
-                        Register your team today by filling out the official form below.
+                        Explore the events and register with just one click on the <bold>Register</bold> button.
                     </p>
-
                     {/* Button */}
-                    <BouncyCircle href="https://forms.gle/your-form-id" target="_blank" rel="noopener noreferrer">Fill Google Form</BouncyCircle>
+                    {/* <BouncyCircle href="https://forms.gle/your-form-id" target="_blank" rel="noopener noreferrer">Fill Google Form</BouncyCircle> */}
                     <style>{`
                     @keyframes bounce { 0%, 100% { transform: translateY(0) scale(1); filter: drop-shadow(0 12px 16px rgba(0,0,0,.45)); }
                         50% { transform: translateY(-18px) scale(1.02); filter: drop-shadow(0 24px 28px rgba(0,0,0,.35)); } }
@@ -189,7 +149,7 @@ const Events = () => {
                                             day: '2-digit',
                                             year: 'numeric'
                                         })} />
-                                        <Info k="Duration" v={`${active.durationMins} mins`} />
+                                        <Info k="Duration" v={active.duration} />
                                         <Info k="Location" v={active.location} />
                                         <Info k="Prizes" v={active.prizes} />
                                         <Info k="Fee" v={active.regFee ? `₹${active.regFee}` : "Free"} />
@@ -219,7 +179,8 @@ const Events = () => {
 }
 function EventCard({ e, onOpen }) {
     return (
-        <div className="rounded-2xl overflow-hidden border bg-white hover:shadow-md transition-shadow">
+        <div className="rounded-2xl overflow-hidden border bg-white hover:shadow-md transition-shadow cursor-pointer"
+            onClick={onOpen}>
             <div className="aspect-[2/1] bg-slate-100 overflow-hidden">
                 <img src={e.poster} alt={e.title} className="w-full h-full object-cover" />
             </div>

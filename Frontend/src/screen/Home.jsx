@@ -1,27 +1,11 @@
 import React, { useMemo, useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import { Mail, Phone } from "lucide-react";
-import logo from "../assets/urlLogo.png";
 import Footer from "../components/Footer";
 import mainImage from "../assets/danger_20250825_204323_0000_page-0001.jpg";
 import SportsPoster from "../assets/Sports-Poster.png";
 import CulturalPoster from "../assets/Cultural-Poster.png";
 import EduFunPoster from "../assets/EduFun-Poster.png";
-// import Design-Poster from "../assets/Design-Poaster.jpg";
 import InnovationPoster from "../assets/Innovation-Poster.png";
-
-const homeEvents = {
-  img1: {
-    src: "/images/DSC05692.JPG",
-    title: "Celebrity Night",
-  },
-  img2: "/images/DSC05692.JPG",
-  img3: "/images/DSC05692.JPG",
-  img4: "/images/DSC05692.JPG",
-  img5: "/images/DSC05692.JPG"
-}
 
 const team = [
   {
@@ -30,7 +14,7 @@ const team = [
   },
   {
     title: "Conveners",
-    members: ["Mr J.P Bhamaniya", "Ms Divya Mam"],
+    members: ["Mr J.P Bhamaniya", "Dr Divya Sain"],
   },
   {
     title: "Technical Coordinators",
@@ -85,7 +69,7 @@ export default function Manthan() {
   });
 
   useEffect(() => {
-    const targetDate = new Date("2025-10-12T00:00:00").getTime(); // change date here
+    const targetDate = new Date("2025-10-09T00:00:00").getTime(); // change date here
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -109,9 +93,9 @@ export default function Manthan() {
   }, []);
 
   return (
-    <div className="home min-h-screen text-slate-900 backdrop-blur-sm bg-black/30">
+    <div className="home min-h-screen text-slate-900 backdrop-blur-sm bg-black/30" id="home">
       <Navbar />
-      <div className=" h-full w-full overflow-hidden bg-black/30">
+      <div className="h-full w-full overflow-hidden bg-black/30" >
         <div ref={layerRef} className="pointer-events-none absolute inset-0 [transform:translate(var(--parallax-x,0),var(--parallax-y,0))]">
           <Planet className="left-[5%] top-[10%] h-24 w-24" hue={210} delay={0} ring />
           <Planet className="right-[20%] top-[3%] h-32 w-32" hue={320} delay={1.5} ring />
@@ -137,9 +121,9 @@ export default function Manthan() {
             <div className="rounded-3xl border p-5 shadow-sm border-[#F69D25]">
               <img alt="festival poster" className="rounded-2xl w-full" src={mainImage} />
               <div className="mt-4 grid grid-cols-3 gap-4 text-center text-sm">
-                <Stat k="50+" v="Events" />
-                <Stat k="2000+" v="Participants" />
-                <Stat k="₹2L+" v="Prizes" />
+                <Stat k="20+" v="Events" />
+                <Stat k="500+" v="Participants" />
+                <Stat k="₹1L+" v="Prizes" />
               </div>
             </div>
             <div className="absolute bottom-6 -left-6 h-20 w-20 rounded-3xl bg-white/40 blur-2xl" />
@@ -210,7 +194,7 @@ export default function Manthan() {
       </section>
 
       {/* TEAM */}
-      <section className="p-6 w-full bg-black/30">
+      <section className="p-6 w-full bg-black/30" id="team">
         <h2 className="text-3xl md:text-5xl font-orbitron font-bold text-center mb-10 bg-gradient-to-br from-[#F69D25] to-[#9529B1] bg-clip-text text-transparent leading-[1.1]">Our Team</h2>
         <div className="space-y-6 max-w-7xl mx-auto">
           <div className="w-full bg-black/30 rounded-2xl shadow-[0_0_25px_rgba(255,200,0,0.3)] p-6 flex flex-col justify-center items-center">
@@ -254,10 +238,11 @@ export default function Manthan() {
         <div className="mx-auto max-w-5xl px-4">
           <h2 className="text-3xl md:text-5xl font-orbitron font-bold text-center mb-10 bg-gradient-to-br from-[#F69D25] to-[#9529B1] bg-clip-text text-transparent leading-[1.1]">FAQ</h2>
           <div className="mt-6 grid md:grid-cols-2 gap-4">
-            <Faq q="Is registration free?" a="Most events are free or low‑cost. Paid events show a fee on the card." />
-            <Faq q="Team size?" a="Varies by event. See the detail modal for exact rules." />
-            <Faq q="Do I get an e‑ticket?" a="Yes. You’ll receive an email with a QR pass after registration." />
-            <Faq q="How do I pay?" a="UPI/cards supported via your chosen gateway on the register flow." />
+            <Faq q="How do I register?" a="Click on the event card and fill out the Google Form. Complete the form with your details to register." />
+            <Faq q="Is there a registration fee?" a="Yes, each event has a fee mentioned on the event card. Payment is done via the QR code in the Google Form. Enter your UTR/transaction number to confirm registration." />
+            <Faq q="Can I join multiple events?" a="Yes, but each event requires a separate registration and payment." />
+            <Faq q="What about refunds or cancellations?" a="Refunds depend on the event organizer’s policy. Contact them before making payment if unsure." />
+            <Faq q="Who to contact for help?" a="Contact details of event coordinators are on the website or in the Google Form." />
           </div>
         </div>
       </section>
