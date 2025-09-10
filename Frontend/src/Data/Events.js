@@ -10,11 +10,12 @@ const events = [{
     short: "High-flying hoops and teamwork.",
     description:
         "Feel the excitement of Basketball as players dribble, pass, and shoot to outscore their opponents with precision and teamwork.",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹11,000, Trophy, Certificate, Gold Medal",
+    secondPrize: "₹3,100, Trophy, Certificate, Silver Medal",
     poster: "/images/Beige Red Black Illustrative Basketball Tournament Banner .jpg",
     regFee: 1800,
-}
-    ,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdV-QIinOvoy-YBx2utP-vEhjdi8WO-2MSyiBnVVzFiNW6q0Q/viewform?usp=sharing&ouid=105205958087852905603"
+},
 {
     id: 2,
     title: `Cricket (Tennis Ball)`,
@@ -27,9 +28,11 @@ const events = [{
     short: "Thrilling matches of skill, teamwork, and sportsmanship.",
     description:
         "Experience the excitement of cricket as teams battle it out with strategy, passion, and unstoppable energy on the field.",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹11,000, Trophy, Certificate, Gold Medal",
+    secondPrize: "₹3,100, Trophy, Certificate, Silver Medal",
     poster: "/images/cricekt poster.jpg",
     regFee: 1100,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSeqzrxEMjYON_Ox4K7au1SZETVhGSwwImxVOwdpvkeDWYltSQ/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 3,
@@ -43,9 +46,11 @@ const events = [{
     short: "Intense net battles.",
     description:
         "Enjoy the challenge of Volleyball where teams hit the ball over the net, combining agility, strategy, and coordination to win points.",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹11,000, Trophy, Certificate, Gold Medal",
+    secondPrize: "₹3,100, Trophy, Certificate, Silver Medal",
     poster: "/images/volleybol poster.jpg",
     regFee: 1800,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSeHJXDhbUS6f66-J6U3_t5QW4v8TNd80-VmMUjtRfx-zNjciw/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 4,
@@ -59,9 +64,11 @@ const events = [{
     short: "Speed, precision, and smashes.",
     description:
         "Dive into Badminton where players showcase quick reflexes and skillful shots to outplay their opponents and score points.",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹2,100, Trophy, Certificate, Gold Medal",
+    secondPrize: "₹1,100, Trophy, Certificate, Silver Medal",
     poster: "/images/badminoton poster.png",
     regFee: 800,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLScrR8fQIZdyn5T24Pfudbna0DTg1QxvjsyK4uS1909JHK9vZw/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 5,
@@ -75,9 +82,11 @@ const events = [{
     short: "Fast-paced indoor cricket fun.",
     description:
         "Experience the thrill of Box Cricket as teams compete with strategy, skill, and energy in a small enclosed arena.",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹5,100, Trophy, Certificate, Gold Medal",
+    secondPrize: "₹2,100, Trophy, Certificate, Silver Medal",
     poster: "/images/Box cricket poster.jpg",
     regFee: 1100,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdEXufCfH4voQoPZki3aEdoam5RPraK2FmAxkf47JSl6EsOrQ/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 6,
@@ -91,9 +100,11 @@ const events = [{
     short: "Thrilling physical duels.",
     description:
         "Experience the excitement of Kabaddi as players showcase strength, strategy, and agility while raiding and defending on the mat.",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹11,000, Trophy, Certificate, Gold Medal",
+    secondPrize: "₹3,100, Trophy, Certificate, Silver Medal",
     poster: "/images/Kabaddi poster.jpg",
     regFee: 1800,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSfjqNZXBt-0RhgFuBLRz6fEfP14-yaEHHCwUchB4V1XaRoYYw/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 7,
@@ -107,9 +118,11 @@ const events = [{
     short: "Mind battles and strategy.",
     description:
         "Dive into the world of Chess where players plan every move with precision, foresight, and tactical brilliance to outsmart their opponent.",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹2,100, Trophy, Certificate, Gold Medal",
+    secondPrize: "₹1,100, Trophy, Certificate, Silver Medal",
     poster: "/images/Chess Tournament Banner.jpg",
     regFee: 800,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdPqIaRvO55gVN2tVzAx7rsADBKvR-8CRMtNyn8AwFJ7z6Cdw/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 8,
@@ -123,25 +136,29 @@ const events = [{
     short: "Mind battles and strategy.",
     description:
         "Dive into the world of Chess where players plan every move with precision, foresight, and tactical brilliance to outsmart their opponent.",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹3,100, Certificate",
+    secondPrize: "₹1,100, Certificate",
     poster: "/images/hackathon poster.jpg",
     regFee: 500,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSf38vJaaflyFl1jXjO76p_b56zbNg9wrdrlf1EqdBiByHv4qg/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 9,
     title: `Tug of War (M/W)`,
     category: "Sports",
     type: "Team",
-    date: '10-10-2025 9:30 AM',
-    duration: "10/10/2025 - 11/10/2025",
+    date: '10-11-2025 9:30 AM',
+    duration: "11/10/2025 - 12/10/2025",
     location: "SBSS Main Ground",
     tags: ["Sports", "Strength", "Team Spirit"],
     short: "Strength, grit, and teamwork.",
     description:
         " Feel the thrill as teams pull with all their might in this ultimate test of unity and power",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹5,100, Certificate, Gold Medal",
+    secondPrize: "₹2,100, Certificate, Silver Medal",
     poster: "/images/Tug-of-War poster.jpg",
     regFee: 1000,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSenKoDBxteGzGT_Nh7ZIuVqr47uvhoCvcFBPuzKpNFljUABWg/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 10,
@@ -155,9 +172,11 @@ const events = [{
     short: "Creativity on a plate.",
     description:
         " Taste innovation as participants prepare delicious dishes without fire, blending art with flavor.",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹2,100, Certificate",
+    secondPrize: "₹1,100, Certificate",
     poster: "/images/Fireless cooking poster.jpg",
     regFee: 100,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdhoP9G1h5aWVmFY_QTjCDy8uRIMbsMUYo5V4_C6NVK7KkOmQ/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 11,
@@ -171,25 +190,29 @@ const events = [{
     short: "Pitch, persuade, and conquer",
     description:
         " Witness budding entrepreneurs pitch bold ideas to impress the judges with innovation and business acumen.",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹2,100, Certificate",
+    secondPrize: "₹1,100, Certificate",
     poster: "/images/shark tank poster.jpg",
     regFee: 100,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSeqLUdXSdr2NJbBEimTAa452G5R7b3HUcglcXepTZzAYvOE6w/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 12,
     title: `Clash Of Thought`,
     category: "Literary / Intellectual",
     type: "Individual",
-    date: '10-11-2025 10:00 AM',
+    date: '10-13-2025 01:30 PM',
     duration: "13/10/2025",
     location: "GCC Auditorium SBSS",
     tags: ["Debate", "Public Speaking", "Logic"],
     short: "Battle of ideas and intellect.",
     description:
         "Witness sharp minds debate passionately, defending their views with logic, wit, and confidence.",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹2,100, Certificate",
+    secondPrize: "₹1,100, Certificate",
     poster: "/images/CLASH OF thoughts poster.jpg",
     regFee: 100,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdnH4dktbInYD0Cs4Yz1mDsL4KVEC5Bug4JydtL0Ynxpb54fw/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 13,
@@ -203,9 +226,11 @@ const events = [{
     short: "One stage, one performer, endless expressions.",
     description:
         "Feel the rhythm and energy as a solo dancer captivates the stage with graceful moves and raw passion .",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹2,100 + Trophy + Certificate",
+    secondPrize: "₹1,100 + Trophy + Certificate",
     poster: "/images/Solo dance poster.jpg",
     regFee: 300,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLScGjFI3kIsRJqwew4M8MFRf7LbmYP3jgiPrkIwtuphQHNZXag/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 14,
@@ -219,9 +244,11 @@ const events = [{
     short: "United moves, unmatched energy",
     description:
         " Experience the power of coordination and creativity as groups light up the stage with vibrant performances.",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹2,100, Trophy, Certificate",
+    secondPrize: "₹1,100, Trophy, Certificate",
     poster: "/images/Group dance poster.jpg",
     regFee: 1100,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdSSorVWCeDSYCRnitbl9e6NTaoR9NQ7r33xCgsl-U2P6Y12A/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 15,
@@ -235,15 +262,17 @@ const events = [{
     short: "Two hearts, one rhythm",
     description:
         " Enjoy the chemistry and synchronization of two dancers weaving emotions into their performance.",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹2,100, Trophy, Certificate",
+    secondPrize: "₹1,100, Trophy, Certificate",
     poster: "/images/duet dance poster.jpg",
     regFee: 500,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSeMbGk6n41vexM0rW1FDdX8HlDgA0_j5byFTRHcIuPp5xrxPw/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 16,
     title: `Ramp Walk`,
     category: "Cultural",
-    type: "Individual",
+    type: "Team",
     date: '10-13-2025 5:00 PM',
     duration: "13/10/2025",
     location: "GCC Auditorium SBSS",
@@ -251,25 +280,29 @@ const events = [{
     short: "Confidence meets style",
     description:
         "Watch elegance and charisma unfold as participants walk the ramp with poise and personality.",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹11,000, Trophy, Certificate",
+    secondPrize: "₹3,100, Trophy, Certificate",
     poster: "/images/RAMP WALK poster.jpg",
     regFee: 1100,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSfouZNufBRqItChVDgAKISXfJW8r3ToLEe-JrSYjSf20moAng/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 17,
     title: `Singing`,
     category: "Cultural",
     type: "Individual",
-    date: '10-13-2025 5:00 PM',
+    date: '10-13-2025 11:00 PM',
     duration: "13/10/2025",
     location: "GCC Auditorium SBSS",
     tags: ["Music", "Performance", "Talent"],
     short: "Mind battles and strategy.",
     description:
         "Dive into the world of Chess where players plan every move with precision, foresight, and tactical brilliance to outsmart their opponent.",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹2,100, Trophy, Certificate",
+    secondPrize: "₹1,100, Trophy, Certificate",
     poster: "/images/Singing poster.jpg",
-    regFee: 100,
+    regFee: 300,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSd6la8YFofsS-ZdY7d6WvtvNp76aOq_epYmedjigUJuB63YFQ/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 18,
@@ -283,9 +316,137 @@ const events = [{
     short: "Test of speed, strength, and stamina.",
     description:
         "Experience the thrill of athletics as participants showcase their endurance, agility, and determination across diverse track and field events.",
-    prizes: "₹15,000 + goodies",
+    firstPrize: "₹2,100, Certificate, Gold Medal",
+    secondPrize: "₹1,100, Certificate, Silver Medal",
     poster: "/images/Athletics poster.jpg",
+    regFee: 500,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSfVHPFON71yXLluhbGdDS_43vGX1Wbnnw9h-Y8kUVDKJ6Rxcg/viewform?usp=sharing&ouid=105205958087852905603"
+},
+{
+    id: 19,
+    title: `Nukkad Natak`,
+    category: "Cultural",
+    type: "Team",
+    date: '10-09-2025 10:00 AM',
+    duration: "09/10/2025 - 10/10/2025",
+    location: "GCC Auditorium SBSS",
+    tags: ["Drama", "SocialImpact", "StreetPlay"],
+    short: "Voices of change, straight from the street.",
+    description:
+        "A powerful street play where performers raise awareness on social issues through drama, expressions, and impactful dialogues.",
+    firstPrize: "₹2,100, Certificate",
+    secondPrize: "₹1,100, Certificate",
+    poster: "/images/Nukkad natak poster.jpg",
     regFee: 100,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSe98xpy9tDzAOZPh0OiGLbjOv_H0VfQOeoV4uQpIc28K6sWJg/viewform?usp=sharing&ouid=105205958087852905603"
+},
+{
+    id: 20,
+    title: `T-Shirt Painting`,
+    category: "Cultural",
+    type: "Individual",
+    date: '10-09-2025 01:00 PM',
+    duration: "09/10/2025",
+    location: "GCC Auditorium SBSS",
+    tags: ["Creativity", "DIYFashion", "Design"],
+    short: "Wear your imagination.",
+    description:
+        "Unleash creativity by designing and printing your own custom T-shirts with unique patterns, quotes, or artwork.",
+    firstPrize: "₹2,100, Certificate",
+    secondPrize: "₹1,100, Certificate",
+    poster: "/images/T-shirt printing poster.jpg",
+    regFee: 100,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdudWWWd4-KK2PTU4--Mfr6ZMfpBHFb5eAFYV3KweCVeDv8Bg/viewform?usp=sharing&ouid=105205958087852905603"
+},
+{
+    id: 21,
+    title: `Skill ShowCase`,
+    category: "Tech / Innovation",
+    type: "Individual",
+    date: '10-10-2025 11:00 AM',
+    duration: "10/10/2025",
+    location: "GCC Auditorium SBSS",
+    tags: ["TalentHunt", "CreativityUnleashed", "ShowYourSkill"],
+    short: "Where hidden talents shine bright.",
+    description:
+        "A stage for participants to display their hidden talents, from music and dance to magic and art.",
+    firstPrize: "₹2,100, Certificate",
+    secondPrize: "₹1,100, Certificate",
+    poster: "/images/Skill showcase poster.jpg",
+    regFee: 100,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSe_R7RFrvWzlPlQ7g8aVKmv3Noo8-kOugDXBN4Ul67F-1GbYg/viewform?usp=sharing&ouid=105205958087852905603"
+},
+{
+    id: 22,
+    title: `Open Mic`,
+    category: "Literary / Intellectual",
+    type: "Individual",
+    date: '10-10-2025 01:00 AM',
+    duration: "10/10/2025",
+    location: "GCC Auditorium SBSS",
+    tags: ["Poetry", "StandUp", "Expression"],
+    short: "One mic, endless voices.",
+    description:
+        "A casual stage for poetry, stand-up, stories, or songs—open for anyone with a voice and a vibe.",
+    firstPrize: "₹2,100, Certificate",
+    secondPrize: "₹1,100, Certificate",
+    poster: "/images/OPEN MIC POSTER.jpg",
+    regFee: 100,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSei82MC9euTNUpkyvBFBbvSD_qPD72l4vn0ziLVey6f45mpIw/viewform?usp=sharing&ouid=105205958087852905603"
+},
+{
+    id: 23,
+    title: `Ink Imagination`,
+    category: "Cultural",
+    type: "Individual",
+    date: '10-11-2025 11:00 AM',
+    duration: "11/10/2025",
+    location: "GCC Auditorium SBSS",
+    tags: ["Writing", "Creativity", "Poetry"],
+    short: "When ink flows, imagination grows.",
+    description:
+        "A creative writing event where words paint worlds—stories, poems, and ideas brought alive with imagination.",
+    firstPrize: "₹2,100, Certificate",
+    secondPrize: "₹1,100, Certificate",
+    poster: "/images/INK IMAGINATION POSTER.jpg",
+    regFee: 100,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLScyV8BzNVHQERLpjf3bdEL0ylokvGqvAow4G6ZVXP5LutmsKw/viewform?usp=sharing&ouid=105205958087852905603"
+},
+{
+    id: 24,
+    title: `Antakshari`,
+    category: "Cultural",
+    type: "Individual",
+    date: '10-11-2025 01:00 PM',
+    duration: "11/10/2025",
+    location: "GCC Auditorium SBSS",
+    tags: ["Music", "Fun", "TeamPlay"],
+    short: "Where music never ends.",
+    description:
+        "A fun-filled musical battle of teams singing songs based on the last letter of the previous one.",
+    firstPrize: "₹2,100, Certificate",
+    secondPrize: "₹1,100, Certificate",
+    poster: "/images/Antakshari poster.jpg",
+    regFee: 250,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSfk6FlLsuYFVOv80qufFP9X9c0VvZw4Sa39Szy-Gt-afOldcg/viewform?usp=sharing&ouid=105205958087852905603"
+},
+{
+    id: 25,
+    title: `Bridge Making Competition`,
+    category: "Tech / Innovation",
+    type: "Individual",
+    date: '10-11-2025 09:30 AM',
+    duration: "11/10/2025",
+    location: "GCC Auditorium SBSS",
+    tags: ["Engineering", "Innovation", "StructuralDesign"],
+    short: "Build bridges, not walls.",
+    description:
+        "A technical challenge where teams design and construct model bridges to test creativity, strength, and engineering skills.",
+    firstPrize: "₹2,100, Certificate",
+    secondPrize: "₹1,100, Certificate",
+    poster: "/images/Bridge poster.jpg",
+    regFee: 100,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSc9METkMOiZQjJaBfqS_gbLaeKWkqMRhsOeg_RQfvCDCzmSpg/viewform?usp=sharing&ouid=105205958087852905603"
 }
 ];
 

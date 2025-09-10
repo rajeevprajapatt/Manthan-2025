@@ -148,7 +148,8 @@ const Events = () => {
                                         })} />
                                         <Info k="Duration" v={active.duration} />
                                         <Info k="Location" v={active.location} />
-                                        <Info k="Prizes" v={active.prizes} />
+                                        <Info k="I Prize" v={active.firstPrize} />
+                                        <Info k="II Prize" v={active.secondPrize} />
                                         <Info k="Fee" v={active.regFee ? `₹${active.regFee}` : "Free"} />
                                     </div>
                                     <div className="mt-3 flex flex-wrap gap-2">
@@ -158,10 +159,11 @@ const Events = () => {
                                     </div>
                                     <p className="mt-3 text-sm text-slate-700">{active.description}</p>
                                     <div className="mt-5 flex items-center gap-3">
-                                        <button onClick={() => {
-                                            setActive(null);
-                                            navigate(`/register`, { state: active });
-                                        }} className="px-4 py-2 rounded-xl bg-indigo-600 text-white">Register</button>
+                                        <Link to={active.link} target="_blank" rel="noreferrer">
+                                            <button onClick={() => {
+                                                setActive(null);
+                                            }} className="px-4 py-2 rounded-xl bg-indigo-600 text-white">Register</button>
+                                        </Link>
                                         <button onClick={() => setActive(null)} className="px-4 py-2 rounded-xl ring-1 bg-indigo-600 text-slate-300 ring-slate-200">Close</button>
                                     </div>
                                 </div>
@@ -179,7 +181,7 @@ function EventCard({ e, onOpen }) {
         <div className="rounded-2xl overflow-hidden border bg-white hover:shadow-md transition-shadow cursor-pointer"
             onClick={onOpen}>
             <div className="aspect-[2/1] bg-slate-100 overflow-hidden">
-                <img src={e.poster} alt={e.title} className="w-full h-full object-cover" loading='lazy'/>
+                <img src={e.poster} alt={e.title} className="w-full h-full object-cover" loading='lazy' />
             </div>
             <div className="p-4">
                 <div className="flex items-center justify-between gap-2">

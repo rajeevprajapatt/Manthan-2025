@@ -129,9 +129,9 @@ export default function Manthan() {
             <div className="rounded-3xl border p-5 shadow-sm border-[#F69D25]">
               <img alt="festival poster" className="rounded-2xl w-full" src={mainImage} />
               <div className="mt-4 grid grid-cols-3 gap-4 text-center text-sm">
-                <Stat k="20+" v="Events" />
-                <Stat k="500+" v="Participants" />
-                <Stat k="₹1L+" v="Prizes" />
+                <Stat k="25+" v="Events" />
+                <Stat k="1000+" v="Participants" />
+                <Stat k="₹2L+" v="Prizes" />
               </div>
             </div>
             <div className="absolute bottom-6 -left-6 h-20 w-20 rounded-3xl bg-white/40 blur-2xl" />
