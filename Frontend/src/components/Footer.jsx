@@ -46,11 +46,14 @@ const Footer = () => {
                     {/* LEFT SIDE */}
                     <div className="p-8 flex flex-col items-start justify-start">
                         <div className="flex items-center space-x-6">
-                            <img
-                                src={logo}
-                                alt="Logo"
-                                className="w-36 h-36 object-contain"
-                            />
+                            <Link to="https://sbss.ac.in/" target='_blank' rel='noreferrer'>
+                                <img
+                                    src={logo}
+                                    alt="Logo"
+                                    className="w-40 h-40 object-contain"
+                                    loading="lazy"
+                                />
+                            </Link>
                             <h1 className="text-2xl md:text-3xl font-bold font-orbitron bg-gradient-to-br from-[#F69D25] to-[#9529B1] bg-clip-text text-transparent leading-[1.1]">
                                 Sri Balaji Shiksha Samiti, Jaipur
                             </h1>
@@ -60,7 +63,7 @@ const Footer = () => {
                             <h2 className="text-lg font-semibold mb-1 text-[#F69D25]">Have Questions?</h2>
                             <p className="flex items-center space-x-2">
                                 <Mail className="w-5 h-5 text-[#F69D25]" />
-                                <span>support@manthan2k25.com</span>
+                                <span><a href='mailto:manthan2025@sbss.ac.in?subject=Event%20Related%20Query'>manthan2025@sbss.ac.in</a></span>
                             </p>
                         </div>
                     </div>

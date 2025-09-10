@@ -2,10 +2,10 @@ import React, { useMemo, useState, useRef, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import mainImage from "../assets/danger_20250825_204323_0000_page-0001.jpg";
-import SportsPoster from "../assets/Sports-Poster.png";
-import CulturalPoster from "../assets/Cultural-Poster.png";
-import EduFunPoster from "../assets/EduFun-Poster.png";
-import InnovationPoster from "../assets/Innovation-Poster.png";
+import SportsPoster from "../assets/Sports-Poster.jpg";
+import CulturalPoster from "../assets/Cultural-Poster.jpg";
+import EduFunPoster from "../assets/EduFun-Poster.jpg";
+import InnovationPoster from "../assets/Innovation-Poster.jpg";
 
 const team = [
   {
@@ -206,10 +206,10 @@ export default function Manthan() {
         <h2 className="text-3xl md:text-5xl font-orbitron font-bold text-center mb-10 bg-gradient-to-br from-[#F69D25] to-[#9529B1] bg-clip-text text-transparent leading-[1.1]">Our Team</h2>
         <div className="space-y-6 max-w-7xl mx-auto">
           <div className="w-full bg-black/30 rounded-2xl shadow-[0_0_25px_rgba(255,200,0,0.3)] p-6 flex flex-col justify-center items-center">
-            <h3 className="text-2xl font-semibold mb-2 text-[#F69D25]">{team[0].title}</h3>
-            <ul className="list-disc pl-6 text-slate-300">
+            <h3 className="text-3xl font-semibold mb-2 text-[#F69D25]">{team[0].title}</h3>
+            <ul className="list-disc text-slate-300">
               {team[0].members.map((m, i) => (
-                <li key={i}>{m}</li>
+                <li className="text-lg list-none" key={i}>{m}</li>
               ))}
             </ul>
           </div>
@@ -283,7 +283,7 @@ function Faq({ q, a }) {
   return (
     <div className="rounded-2xl p-5 bg-black/10 shadow-[0_0_25px_rgba(255,200,0,0.3)]">
       <div className="font-medium text-lg text-[#F69D25]">{q}</div>
-      <p className="text-sm text-slate-600 mt-1">{a}</p>
+      <p className="text-sm text-slate-300 mt-1">{a}</p>
     </div>
   );
 }

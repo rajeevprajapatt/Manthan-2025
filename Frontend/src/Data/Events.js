@@ -11,7 +11,7 @@ const events = [{
     description:
         "Feel the excitement of Basketball as players dribble, pass, and shoot to outscore their opponents with precision and teamwork.",
     prizes: "₹15,000 + goodies",
-    poster: "/images/Beige Red Black Illustrative Basketball Tournament Banner .png",
+    poster: "/images/Beige Red Black Illustrative Basketball Tournament Banner .jpg",
     regFee: 1800,
 }
     ,
@@ -28,7 +28,7 @@ const events = [{
     description:
         "Experience the excitement of cricket as teams battle it out with strategy, passion, and unstoppable energy on the field.",
     prizes: "₹15,000 + goodies",
-    poster: "/images/cricekt poster.png",
+    poster: "/images/cricekt poster.jpg",
     regFee: 1100,
 },
 {
@@ -44,7 +44,7 @@ const events = [{
     description:
         "Enjoy the challenge of Volleyball where teams hit the ball over the net, combining agility, strategy, and coordination to win points.",
     prizes: "₹15,000 + goodies",
-    poster: "/images/volleybol poster.png",
+    poster: "/images/volleybol poster.jpg",
     regFee: 1800,
 },
 {
@@ -76,7 +76,7 @@ const events = [{
     description:
         "Experience the thrill of Box Cricket as teams compete with strategy, skill, and energy in a small enclosed arena.",
     prizes: "₹15,000 + goodies",
-    poster: "/images/Box cricket poster.png",
+    poster: "/images/Box cricket poster.jpg",
     regFee: 1100,
 },
 {
@@ -92,7 +92,7 @@ const events = [{
     description:
         "Experience the excitement of Kabaddi as players showcase strength, strategy, and agility while raiding and defending on the mat.",
     prizes: "₹15,000 + goodies",
-    poster: "/images/Kabaddi poster.png",
+    poster: "/images/Kabaddi poster.jpg",
     regFee: 1800,
 },
 {
@@ -108,7 +108,7 @@ const events = [{
     description:
         "Dive into the world of Chess where players plan every move with precision, foresight, and tactical brilliance to outsmart their opponent.",
     prizes: "₹15,000 + goodies",
-    poster: "/images/Chess Tournament Banner.png",
+    poster: "/images/Chess Tournament Banner.jpg",
     regFee: 800,
 },
 {
@@ -124,7 +124,7 @@ const events = [{
     description:
         "Dive into the world of Chess where players plan every move with precision, foresight, and tactical brilliance to outsmart their opponent.",
     prizes: "₹15,000 + goodies",
-    poster: "/images/hackathon poster.png",
+    poster: "/images/hackathon poster.jpg",
     regFee: 500,
 },
 {
@@ -156,7 +156,7 @@ const events = [{
     description:
         " Taste innovation as participants prepare delicious dishes without fire, blending art with flavor.",
     prizes: "₹15,000 + goodies",
-    poster: "/images/Fireless cooking poster.png",
+    poster: "/images/Fireless cooking poster.jpg",
     regFee: 100,
 },
 {
@@ -172,7 +172,7 @@ const events = [{
     description:
         " Witness budding entrepreneurs pitch bold ideas to impress the judges with innovation and business acumen.",
     prizes: "₹15,000 + goodies",
-    poster: "/images/shark tank poster.png",
+    poster: "/images/shark tank poster.jpg",
     regFee: 100,
 },
 {
@@ -188,7 +188,7 @@ const events = [{
     description:
         "Witness sharp minds debate passionately, defending their views with logic, wit, and confidence.",
     prizes: "₹15,000 + goodies",
-    poster: "/images/CLASH OF thoughts poster.png",
+    poster: "/images/CLASH OF thoughts poster.jpg",
     regFee: 100,
 },
 {
@@ -204,7 +204,7 @@ const events = [{
     description:
         "Feel the rhythm and energy as a solo dancer captivates the stage with graceful moves and raw passion .",
     prizes: "₹15,000 + goodies",
-    poster: "/images/Solo dance poster.png",
+    poster: "/images/Solo dance poster.jpg",
     regFee: 300,
 },
 {
@@ -220,7 +220,7 @@ const events = [{
     description:
         " Experience the power of coordination and creativity as groups light up the stage with vibrant performances.",
     prizes: "₹15,000 + goodies",
-    poster: "/images/Group dance poster.png",
+    poster: "/images/Group dance poster.jpg",
     regFee: 1100,
 },
 {
@@ -236,7 +236,7 @@ const events = [{
     description:
         " Enjoy the chemistry and synchronization of two dancers weaving emotions into their performance.",
     prizes: "₹15,000 + goodies",
-    poster: "/images/duet dance poster.png",
+    poster: "/images/duet dance poster.jpg",
     regFee: 500,
 },
 {
@@ -252,7 +252,7 @@ const events = [{
     description:
         "Watch elegance and charisma unfold as participants walk the ramp with poise and personality.",
     prizes: "₹15,000 + goodies",
-    poster: "/images/RAMP WALK poster.png",
+    poster: "/images/RAMP WALK poster.jpg",
     regFee: 1100,
 },
 {
@@ -268,7 +268,7 @@ const events = [{
     description:
         "Dive into the world of Chess where players plan every move with precision, foresight, and tactical brilliance to outsmart their opponent.",
     prizes: "₹15,000 + goodies",
-    poster: "/images/Singing poster.png",
+    poster: "/images/Singing poster.jpg",
     regFee: 100,
 }
 ];

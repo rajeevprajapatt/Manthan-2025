@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from '../components/Footer';
-import tempBanner from '../assets/Beige Red Black Illustrative Basketball Tournament Banner .png';
-// import data from '../Data/events.js';
 
-// console.log(data);
 import events from '../Data/Events.js';
 console.log(events);
 
