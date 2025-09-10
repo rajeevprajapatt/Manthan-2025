@@ -252,7 +252,7 @@ const events = [{
     description:
         "Watch elegance and charisma unfold as participants walk the ramp with poise and personality.",
     prizes: "₹15,000 + goodies",
-    poster: "/images/Chess Tournament Banner.png",
+    poster: "/images/RAMP WALK poster.png",
     regFee: 1100,
 },
 {
@@ -268,7 +268,7 @@ const events = [{
     description:
         "Dive into the world of Chess where players plan every move with precision, foresight, and tactical brilliance to outsmart their opponent.",
     prizes: "₹15,000 + goodies",
-    poster: "/images/Chess Tournament Banner.png",
+    poster: "/images/Singing poster.png",
     regFee: 100,
 }
 ];

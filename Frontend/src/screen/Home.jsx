@@ -22,23 +22,31 @@ const team = [
   },
   {
     title: "Ryhthm Club",
-    members: ["Aakash Jangid", "Priyanshi Sharma"],
+    members: ["Devanshu Varma", "Priyanshi Sharma"],
   },
   {
-    title: "Sports Coordinators",
-    members: ["Vinita Choudhary", "Ankit"],
+    title: "Sports Club",
+    members: ["Vinita Choudhary", "Ankit Singh"],
   },
   {
-    title: "Media Coordinators",
+    title: "Media Club",
     members: ["Sumit Singh", "Tanmay Mahawar"],
   },
   {
     title: "Innovation Club",
-    members: ["Nisha", "Akshay"],
+    members: ["Vansh Yadav", "Anshul Choudhary"],
   },
   {
     title: "Eco-Friendly Club",
-    members: ["Sakshi Verma", "Himani Mishra"],
+    members: ["Shakshi Verma", "Himani Mishra"],
+  },
+  {
+    title: "Literacy Club",
+    members: ["Dakshita Sharma", "Vaibhav Srivastav"],
+  },
+  {
+    title: "Social Club",
+    members: ["Nidhi Yadav", "Lucky Singh"],
   },
 ];
 

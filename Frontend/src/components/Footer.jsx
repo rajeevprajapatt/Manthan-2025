@@ -11,6 +11,10 @@ const coordinators = [
         phone: "+91 9829171329",
     },
     {
+        name: "Aakash Jangir",
+        phone: "+91 7374844581",
+    },
+    {
         name: "Ishaan Jangid",
         phone: "+91 8949603232",
     },
