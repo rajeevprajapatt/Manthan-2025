@@ -18,7 +18,7 @@ const team = [
   },
   {
     title: "Technical Coordinators",
-    members: ["Rajeev Prajapat", "Kishan Singh Tanwar", "Anurag Kumawat"],
+    members: ["Rajeev Prajapat", "Kishan Singh Tanwar", "Anurag Kumawat", "Divyanshu Kumawat"],
   },
   {
     title: "Ryhthm Club",
