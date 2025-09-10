@@ -6,7 +6,7 @@ const events = [{
     date: '10-09-2025 9:30 AM',
     duration: "09/10/2025 - 11/10/2025",
     location: "SBSS Basketball Court",
-    tags: ["Onsite", "Team", "Prize money"],
+    tags: ["Sports", "Team Game", "Prize Money"],
     short: "High-flying hoops and teamwork.",
     description:
         "Feel the excitement of Basketball as players dribble, pass, and shoot to outscore their opponents with precision and teamwork.",
@@ -23,7 +23,7 @@ const events = [{
     date: '10-09-2025 9:30 AM',
     duration: "09/10/2025 - 12/10/2025",
     location: "SBSS Cricket Ground",
-    tags: ["Onsite", "Team", "Prize money"],
+    tags: ["Sports", "Team Game", "Prize Money"],
     short: "Thrilling matches of skill, teamwork, and sportsmanship.",
     description:
         "Experience the excitement of cricket as teams battle it out with strategy, passion, and unstoppable energy on the field.",
@@ -39,7 +39,7 @@ const events = [{
     date: '10-09-2025 9:30 AM',
     duration: "09/10/2025 - 11/10/2025",
     location: "SBSS Volleyball Court",
-    tags: ["Onsite", "Team", "Prize money"],
+    tags: ["Sports", "Team Game", "Prize Money"],
     short: "Intense net battles.",
     description:
         "Enjoy the challenge of Volleyball where teams hit the ball over the net, combining agility, strategy, and coordination to win points.",
@@ -103,7 +103,7 @@ const events = [{
     date: '10-09-2025 9:30 AM',
     duration: "09/10/2025 - 11/10/2025",
     location: "GCC Auditorium SBSS",
-    tags: ["Strategy", "Individual", "Prize money"],
+    tags: ["Strategy", "Mind Game", "Strategy"],
     short: "Mind battles and strategy.",
     description:
         "Dive into the world of Chess where players plan every move with precision, foresight, and tactical brilliance to outsmart their opponent.",
@@ -119,7 +119,7 @@ const events = [{
     date: '10-10-2025 5:00 PM',
     duration: "10/10/2025 - 11/10/2025",
     location: "GCC Auditorium SBSS",
-    tags: ["24 hours", "Team", "Innovation", "Prize money"],
+    tags: ["24 hours", "Tech", "Coding", "Innovation"],
     short: "Mind battles and strategy.",
     description:
         "Dive into the world of Chess where players plan every move with precision, foresight, and tactical brilliance to outsmart their opponent.",
@@ -135,7 +135,7 @@ const events = [{
     date: '10-10-2025 9:30 AM',
     duration: "10/10/2025 - 11/10/2025",
     location: "SBSS Main Ground",
-    tags: ["Strength", "Team", "Prize money"],
+    tags: ["Sports", "Strength", "Team Spirit"],
     short: "Strength, grit, and teamwork.",
     description:
         " Feel the thrill as teams pull with all their might in this ultimate test of unity and power",
@@ -151,7 +151,7 @@ const events = [{
     date: '10-11-2025 10:00 AM',
     duration: "11/10/2025",
     location: "GCC Auditorium SBSS",
-    tags: ["Onsite", "Team", "Prize money"],
+    tags: ["Cooking", "Creativity", "Fun"],
     short: "Creativity on a plate.",
     description:
         " Taste innovation as participants prepare delicious dishes without fire, blending art with flavor.",
@@ -167,7 +167,7 @@ const events = [{
     date: '10-11-2025 10:00 AM',
     duration: "11/10/2025",
     location: "GCC Auditorium SBSS",
-    tags: ["Pitch", "Innovation", "Prize money"],
+    tags: ["Entrepreneurship", "Pitching", "Innovation"],
     short: "Pitch, persuade, and conquer",
     description:
         " Witness budding entrepreneurs pitch bold ideas to impress the judges with innovation and business acumen.",
@@ -183,7 +183,7 @@ const events = [{
     date: '10-11-2025 10:00 AM',
     duration: "13/10/2025",
     location: "GCC Auditorium SBSS",
-    tags: ["Onsite", "Team", "Prize money"],
+    tags: ["Debate", "Public Speaking", "Logic"],
     short: "Battle of ideas and intellect.",
     description:
         "Witness sharp minds debate passionately, defending their views with logic, wit, and confidence.",
@@ -199,7 +199,7 @@ const events = [{
     date: '10-13-2025 5:00 PM',
     duration: "13/10/2025",
     location: "GCC Auditorium SBSS",
-    tags: ["Onsite", "Team", "Prize money"],
+    tags: ["Dance", "Solo Performance", "Expression"],
     short: "One stage, one performer, endless expressions.",
     description:
         "Feel the rhythm and energy as a solo dancer captivates the stage with graceful moves and raw passion .",
@@ -211,11 +211,11 @@ const events = [{
     id: 14,
     title: `Group Dance (Groove Crew / Funky Folks)`,
     category: "Cultural",
-    type: "Individual",
+    type: "Team",
     date: '10-13-2025 5:00 PM',
     duration: "13/10/2025",
     location: "GCC Auditorium SBSS",
-    tags: ["Onsite", "Team", "Prize money"],
+    tags: ["Dance", "Group Performance", "Energy"],
     short: "United moves, unmatched energy",
     description:
         " Experience the power of coordination and creativity as groups light up the stage with vibrant performances.",
@@ -227,11 +227,11 @@ const events = [{
     id: 15,
     title: `Duet Dance (Duet Dynamic)`,
     category: "Cultural",
-    type: "Individual",
+    type: "Team",
     date: '10-13-2025 5:00 PM',
     duration: "13/10/2025",
     location: "GCC Auditorium SBSS",
-    tags: ["Onsite", "Team", "Prize money"],
+    tags: ["Dance", "Duet", "Coordination"],
     short: "Two hearts, one rhythm",
     description:
         " Enjoy the chemistry and synchronization of two dancers weaving emotions into their performance.",
@@ -247,7 +247,7 @@ const events = [{
     date: '10-13-2025 5:00 PM',
     duration: "13/10/2025",
     location: "GCC Auditorium SBSS",
-    tags: ["Onsite", "Team", "Prize money"],
+    tags: ["Fashion", "Style", "Confidence"],
     short: "Confidence meets style",
     description:
         "Watch elegance and charisma unfold as participants walk the ramp with poise and personality.",
@@ -263,12 +263,28 @@ const events = [{
     date: '10-13-2025 5:00 PM',
     duration: "13/10/2025",
     location: "GCC Auditorium SBSS",
-    tags: ["Onsite", "Team", "Prize money"],
+    tags: ["Music", "Performance", "Talent"],
     short: "Mind battles and strategy.",
     description:
         "Dive into the world of Chess where players plan every move with precision, foresight, and tactical brilliance to outsmart their opponent.",
     prizes: "₹15,000 + goodies",
     poster: "/images/Singing poster.jpg",
+    regFee: 100,
+},
+{
+    id: 18,
+    title: `Athletics`,
+    category: "Sports",
+    type: "Individual",
+    date: '10-09-2025 9:30 AM',
+    duration: "09/10/2025 - 11/10/2025",
+    location: "GCC Auditorium SBSS",
+    tags: ["Sports", "Track & Field", "Endurance"],
+    short: "Test of speed, strength, and stamina.",
+    description:
+        "Experience the thrill of athletics as participants showcase their endurance, agility, and determination across diverse track and field events.",
+    prizes: "₹15,000 + goodies",
+    poster: "/images/Athletics poster.jpg",
     regFee: 100,
 }
 ];
