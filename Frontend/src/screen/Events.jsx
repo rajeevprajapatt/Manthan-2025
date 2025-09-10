@@ -133,7 +133,7 @@ const Events = () => {
                         <div className="relative z-10 w-full max-w-3xl rounded-2xl bg-white shadow-xl overflow-hidden">
                             <div className="grid md:grid-cols-5">
                                 <div className="md:col-span-2">
-                                    <img alt="poster" src={active.poster} className="w-full h-full object-cover" />
+                                    <img alt="poster" src={active.poster} className="w-full h-full object-cover" loading="lazy" />
                                 </div>
                                 <div className="md:col-span-3 p-5">
                                     <div className="text-xs inline-flex px-2 py-1 rounded-full bg-indigo-50 text-indigo-700 ring-1 ring-indigo-200">{active.category}</div>
@@ -182,7 +182,7 @@ function EventCard({ e, onOpen }) {
         <div className="rounded-2xl overflow-hidden border bg-white hover:shadow-md transition-shadow cursor-pointer"
             onClick={onOpen}>
             <div className="aspect-[2/1] bg-slate-100 overflow-hidden">
-                <img src={e.poster} alt={e.title} className="w-full h-full object-cover" />
+                <img src={e.poster} alt={e.title} className="w-full h-full object-cover" loading='lazy'/>
             </div>
             <div className="p-4">
                 <div className="flex items-center justify-between gap-2">
