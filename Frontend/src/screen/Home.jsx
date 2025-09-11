@@ -14,7 +14,7 @@ const team = [
   },
   {
     title: "Conveners",
-    members: ["Mr J.P Bhamaniya", "Dr Divya Sain"],
+    members: ["Mr J.P Bhamaniya", "Dr Divya Sain", "Dr C.P Mishra", "Dr Manju Devi"],
   },
   {
     title: "Technical Coordinators",
