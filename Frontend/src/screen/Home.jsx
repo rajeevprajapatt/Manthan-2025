@@ -209,16 +209,22 @@ export default function Manthan() {
             <h3 className="text-3xl font-semibold mb-2 text-[#F69D25]">{team[0].title}</h3>
             <ul className="list-disc text-slate-300">
               {team[0].members.map((m, i) => (
-                <li className="text-lg list-none" key={i}>{m}</li>
+                <li className="text-lg" key={i}>{m}</li>
               ))}
             </ul>
           </div>
           <div className="grid grid-cols-1 gap-6">
             <div className="bg-black/30 rounded-2xl shadow-[0_0_25px_rgba(255,200,0,0.3)] p-6 flex flex-col justify-center items-center">
-              <h3 className="text-xl font-semibold mb-2 text-[#F69D25]">{team[1].title}</h3>
-              <ul className="list-disc flex justify-center items-center text-slate-300 gap-7 pl-8 md:pl-0">
+              {/* Heading */}
+              <h3 className="text-xl font-semibold mb-2 text-[#F69D25] text-center">
+                {team[1].title}
+              </h3>
+
+              {/* Members List */}
+              <ul className="text-slate-300 gap-x-12 md:gap-12 pl-4 
+                   grid grid-cols-2 md:flex md:justify-center md:items-center list-disc">
                 {team[1].members.map((m, i) => (
-                  <li className="" key={i}>{m}</li>
+                  <li key={i}>{m}</li>
                 ))}
               </ul>
             </div>
