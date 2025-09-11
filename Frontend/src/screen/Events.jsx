@@ -138,7 +138,8 @@ const Events = () => {
                                     <p className="text-slate-600 text-sm mt-1">{active.short}</p>
                                     <div className="mt-3 grid grid-cols-2 gap-3 text-sm">
                                         <Info k="Type" v={active.type} />
-                                        <Info k="Date" v={new Date(active.date).toLocaleString('en-US', {
+                                        {/* <Info k="Date" v={new Date(active.date).toDateString()} /> */}
+                                        <Info k="Date" v={new Date(active.date).toLocaleString('en-GB', {
                                             hour: 'numeric',
                                             minute: 'numeric',
                                             hour12: true,
@@ -186,7 +187,7 @@ function EventCard({ e, onOpen }) {
             <div className="p-4">
                 <div className="flex items-center justify-between gap-2">
                     <div className="text-xs inline-flex px-2 py-1 rounded-full bg-indigo-50 text-indigo-700 ring-1 ring-indigo-200">{e.category}</div>
-                    <div className="text-xs text-slate-500">{new Date(e.date).toLocaleDateString()}</div>
+                    <div className="text-xs text-slate-500">{new Date(e.date).toDateString() }</div>
                 </div>
                 <div className="mt-1 font-semibold leading-tight line-clamp-2 min-h-[3rem]">{e.title}</div>
                 <div className="mt-1 text-sm text-slate-600 line-clamp-2">{e.short}</div>
