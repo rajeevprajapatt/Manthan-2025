@@ -149,8 +149,18 @@ const Events = () => {
                                         })} />
                                         <Info k="Duration" v={active.duration} />
                                         <Info k="Location" v={active.location} />
-                                        <Info k="I Prize" v={active.firstPrize} />
-                                        <Info k="II Prize" v={active.secondPrize} />
+                                        {active.firstPrize &&
+                                            <Info k="I Prize" v={active.firstPrize} />
+                                        }
+                                        {active.secondPrize &&
+                                            <Info k="II Prize" v={active.secondPrize} />
+                                        }
+                                        {active.thirdPrize &&
+                                            <Info k="III Prize" v={active.thirdPrize} />
+                                        }
+                                        {active.fourthPrize &&
+                                            <Info k="IV to X Prize" v={active.fourthPrize} />
+                                        }
                                         <Info k="Fee" v={active.regFee ? `₹${active.regFee}` : "Free"} />
                                     </div>
                                     <div className="mt-3 flex flex-wrap gap-2">
