@@ -18,7 +18,7 @@ const team = [
   },
   {
     title: "Technical Coordinators",
-    members: ["Rajeev Prajapat", "Kishan Singh Tanwar", "Anurag Kumawat", "Divyanshu Kumawat"],
+    members: ["Rajeev Prajapat", "Anurag Kumawat", "Divyanshu Kumawat", "Kishan Singh Tanwar"],
   },
   {
     title: "Ryhthm Club",
@@ -26,7 +26,7 @@ const team = [
   },
   {
     title: "Sports Club",
-    members: ["Vinita Choudhary", "Ankit Singh"],
+    members: ["Ankit Singh", "Vinita Choudhary"],
   },
   {
     title: "Media Club",
@@ -41,7 +41,7 @@ const team = [
     members: ["Shakshi Verma", "Himani Mishra"],
   },
   {
-    title: "Literacy Club",
+    title: "Literary Club",
     members: ["Dakshita Sharma", "Vaibhav Srivastav"],
   },
   {
@@ -129,7 +129,7 @@ export default function Manthan() {
             <div className="rounded-3xl border p-5 shadow-sm border-[#F69D25]">
               <img alt="festival poster" className="rounded-2xl w-full" src={mainImage} />
               <div className="mt-4 grid grid-cols-3 gap-4 text-center text-sm">
-                <Stat k="25+" v="Events" />
+                <Stat k="30+" v="Events" />
                 <Stat k="1000+" v="Participants" />
                 <Stat k="₹2L+" v="Prizes" />
               </div>

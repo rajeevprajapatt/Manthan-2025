@@ -95,15 +95,17 @@ const Footer = () => {
 
             {/* Footer */}
             <footer className="border-t relative z-10">
-                <div className="mx-auto max-w-7xl px-4 py-8 text-sm text-slate-200 flex flex-col md:flex-row items-center justify-between gap-3">
+                <div className="mx-auto max-w-7xl px-4 py-8 text-md text-slate-200 flex flex-col md:flex-row items-center justify-between gap-3">
                     <div>© {new Date().getFullYear()} Sri Balaji Shiksha Samiti, Jaipur</div>
                     <div>
                         Crafted by{" "}
-                        <span className="font-bold bg-gradient-to-br from-[#F69D25] to-[#9529B1] bg-clip-text text-transparent leading-[1.1]">
-                            <Link to="https://linkedin.com/in/rajeev-prajapat">
+                        <span className="font-bold text-lg leading-[1.1] bg-gradient-to-r from-[#F69D25] via-[#9529B1] to-[#F69D25] 
+                 bg-clip-text text-transparent bg-[length:200%_200%] animate-textShine">
+                            <Link to="https://linkedin.com/in/rajeev-prajapat" target='_blank' rel='noreferrer'>
                                 RAJEEV PRAJAPAT
                             </Link>
                         </span>
+
                     </div>
                 </div>
             </footer>
