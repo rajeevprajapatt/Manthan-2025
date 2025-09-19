@@ -170,11 +170,11 @@ const Events = () => {
                                     </div>
                                     <p className="mt-3 text-sm text-slate-700">{active.description}</p>
                                     <div className="mt-5 flex items-center gap-3">
-                                        <Link to={active.link} target="_blank" rel="noreferrer">
+                                        {active.link && <Link to={active.link} target="_blank" rel="noreferrer">
                                             <button onClick={() => {
                                                 setActive(null);
                                             }} className="px-4 py-2 rounded-xl bg-indigo-600 text-white">Register</button>
-                                        </Link>
+                                        </Link>}
                                         <button onClick={() => setActive(null)} className="px-4 py-2 rounded-xl ring-1 bg-indigo-600 text-slate-300 ring-slate-200">Close</button>
                                     </div>
                                 </div>
@@ -197,7 +197,7 @@ function EventCard({ e, onOpen }) {
             <div className="p-4">
                 <div className="flex items-center justify-between gap-2">
                     <div className="text-xs inline-flex px-2 py-1 rounded-full bg-indigo-50 text-indigo-700 ring-1 ring-indigo-200">{e.category}</div>
-                    <div className="text-xs text-slate-500">{new Date(e.date).toDateString() }</div>
+                    <div className="text-xs text-slate-500">{new Date(e.date).toDateString()}</div>
                 </div>
                 <div className="mt-1 font-semibold leading-tight line-clamp-2 min-h-[3rem]">{e.title}</div>
                 <div className="mt-1 text-sm text-slate-600 line-clamp-2">{e.short}</div>

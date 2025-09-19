@@ -481,7 +481,7 @@ const events = [{
     description:
         "A noble initiative where volunteers donate blood to save lives and support the community’s healthcare needs.",
     poster: "/images/BLOOD Donation poster.jpg",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSc9METkMOiZQjJaBfqS_gbLaeKWkqMRhsOeg_RQfvCDCzmSpg/viewform?usp=sharing&ouid=105205958087852905603"
+    // link: "https://docs.google.com/forms/d/e/1FAIpQLSc9METkMOiZQjJaBfqS_gbLaeKWkqMRhsOeg_RQfvCDCzmSpg/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 28,
@@ -496,7 +496,7 @@ const events = [{
     description:
         "A free medical camp offering essential checkups and consultations to promote awareness and preventive care.",
     poster: "/images/Health checkup poster.jpg",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSc9METkMOiZQjJaBfqS_gbLaeKWkqMRhsOeg_RQfvCDCzmSpg/viewform?usp=sharing&ouid=105205958087852905603"
+    // link: "https://docs.google.com/forms/d/e/1FAIpQLSc9METkMOiZQjJaBfqS_gbLaeKWkqMRhsOeg_RQfvCDCzmSpg/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 29,
@@ -515,7 +515,7 @@ const events = [{
     thirdPrize: "₹1,100, Trophy, Certificate",
     fourthPrize: "₹500, Certificate",
     poster: "/images/Project exhibition school poster.jpg",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSc9METkMOiZQjJaBfqS_gbLaeKWkqMRhsOeg_RQfvCDCzmSpg/viewform?usp=sharing&ouid=105205958087852905603"
+    // link: "https://docs.google.com/forms/d/e/1FAIpQLSc9METkMOiZQjJaBfqS_gbLaeKWkqMRhsOeg_RQfvCDCzmSpg/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 30,
@@ -532,7 +532,7 @@ const events = [{
     firstPrize: "₹2,100, Certificate",
     secondPrize: "₹1,100, Certificate",
     poster: "/images/project exhibition pharma poster.jpg",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSc9METkMOiZQjJaBfqS_gbLaeKWkqMRhsOeg_RQfvCDCzmSpg/viewform?usp=sharing&ouid=105205958087852905603"
+    // link: "https://docs.google.com/forms/d/e/1FAIpQLSc9METkMOiZQjJaBfqS_gbLaeKWkqMRhsOeg_RQfvCDCzmSpg/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 31,
@@ -549,7 +549,7 @@ const events = [{
     firstPrize: "₹2,100, Certificate",
     secondPrize: "₹1,100, Certificate",
     poster: "/images/Project Exhibition science tech poster.jpg",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSc9METkMOiZQjJaBfqS_gbLaeKWkqMRhsOeg_RQfvCDCzmSpg/viewform?usp=sharing&ouid=105205958087852905603"
+    // link: "https://docs.google.com/forms/d/e/1FAIpQLSc9METkMOiZQjJaBfqS_gbLaeKWkqMRhsOeg_RQfvCDCzmSpg/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
     id: 32,
@@ -566,7 +566,7 @@ const events = [{
     firstPrize: "₹2,100, Certificate",
     secondPrize: "₹1,100, Certificate",
     poster: "/images/Project Exhibition for eduction poster.jpg",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSc9METkMOiZQjJaBfqS_gbLaeKWkqMRhsOeg_RQfvCDCzmSpg/viewform?usp=sharing&ouid=105205958087852905603"
+    // link: "https://docs.google.com/forms/d/e/1FAIpQLSc9METkMOiZQjJaBfqS_gbLaeKWkqMRhsOeg_RQfvCDCzmSpg/viewform?usp=sharing&ouid=105205958087852905603"
 }
 ];
 
