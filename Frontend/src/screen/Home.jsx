@@ -173,7 +173,7 @@ export default function Manthan() {
       <div className="flex flex-col items-center justify-center text-white px-6 pt-12 bg-black/30">
         <div className="rounded-2xl shadow-[0_0_25px_rgba(255,200,0,0.3)] p-8 md:p-12 w-full max-w-6xl backdrop-blur-sm">
           <h1 className="text-2xl md:text-5xl font-orbitron font-bold text-center mb-10 bg-gradient-to-br from-[#F69D25] to-[#9529B1] bg-clip-text text-transparent leading-[1.1]">
-            Time Until Manthan 2k25
+            Time Until Manthan 2K25
           </h1>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <TimeBox label="Days" value={timeLeft.days} />

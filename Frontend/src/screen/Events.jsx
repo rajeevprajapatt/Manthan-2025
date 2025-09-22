@@ -26,6 +26,8 @@ const Events = () => {
     const [day, setDay] = useState("All");
     const [sort, setSort] = useState("dateAsc");
     const [active, setActive] = useState(null); // event for modal
+    // const [institute, setInstitute] = useState(null);
+    // const clgForm = "https://docs.google.com/forms/d/e/1FAIpQLSexEE4_HPqrByZykluI-wMtkhATu4_TpdEmu-WOtMMQ8gdEYQ/viewform?usp=sharing&ouid=105205958087852905603";
 
     const days = useMemo(() => {
         const set = new Set(
@@ -168,14 +170,31 @@ const Events = () => {
                                             <span key={t} className="text-xs px-2 py-1 rounded-full bg-slate-100">#{t}</span>
                                         ))}
                                     </div>
-                                    <p className="mt-3 text-sm text-slate-700">{active.description}</p>
+                                    <p className="mt-3 mb-3 text-sm text-slate-700">{active.description}</p>
+                                    {/* {active.link && <label className="md:mt-3 text-sm text-slate-700 font-semibold md:pr-5">Select Institute</label>}
+                                    {active.link && <select value={institute} onChange={e => setInstitute(e.target.value)} className="mt-1 px-1 py-1 rounded-xl ring-1 ring-slate-200 text-sm w-full md:w-1/2">
+                                        <option value={null}>Select</option>
+                                        <option value={"sbss"}>Sri Balaji Shiksha Samiti, Jaipur</option>
+                                        <option value={"other"}>Other</option>
+                                    </select>} */}
                                     <div className="mt-5 flex items-center gap-3">
+                                        {/* {active.link && institute === "sbss" && <Link to={clgForm} target="_blank" rel="noreferrer">
+                                            <button onClick={() => {
+                                                setActive(null);
+                                            }} className="px-4 py-2 rounded-xl bg-indigo-600 text-white">Register</button>
+                                        </Link>}
+                                        {active.link && institute === "other" && <Link to={active.link} target="_blank" rel="noreferrer">
+                                            <button onClick={() => {
+                                                setActive(null);
+                                                setInstitute(null);
+                                            }} className="px-4 py-2 rounded-xl bg-indigo-600 text-white">Register</button>
+                                        </Link>} */}
                                         {active.link && <Link to={active.link} target="_blank" rel="noreferrer">
                                             <button onClick={() => {
                                                 setActive(null);
                                             }} className="px-4 py-2 rounded-xl bg-indigo-600 text-white">Register</button>
                                         </Link>}
-                                        <button onClick={() => setActive(null)} className="px-4 py-2 rounded-xl ring-1 bg-indigo-600 text-slate-300 ring-slate-200">Close</button>
+                                        <button onClick={() => { setActive(null) }} className="px-4 py-2 rounded-xl ring-1 bg-indigo-600 text-slate-300 ring-slate-200">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -189,7 +208,7 @@ const Events = () => {
 }
 function EventCard({ e, onOpen }) {
     return (
-        <div className="rounded-2xl overflow-hidden border bg-white hover:shadow-md transition-shadow cursor-pointer"
+        <div className="rounded-2xl overflow-hidden border bg-white hover:shadow-md hover:transform hover:scale-105 transition-[1.5s] cursor-pointer"
             onClick={onOpen}>
             <div className="aspect-[2/1] bg-slate-100 overflow-hidden">
                 <img src={e.poster} alt={e.title} className="w-full h-full object-cover" loading='lazy' />
