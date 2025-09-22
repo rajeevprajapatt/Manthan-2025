@@ -1,7 +1,7 @@
 import { useNavigate, Link } from 'react-router-dom'
 // import logo from '../assets/urlLogo.png'
 import logo from "../assets/logo_sbss.png"
-import { Mail, Phone } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, Phone, Youtube } from "lucide-react";
 // import bgVideo from '../assets/bgVideo.mp4'
 import bgVideo from "../assets/Abstract Connected Dots On Bright Black Background _ Free Stock Video Footage HD 4K.mp4"
 
@@ -44,7 +44,7 @@ const Footer = () => {
                 <div className="w-full max-w-6xl grid md:grid-cols-2 overflow-hidden">
 
                     {/* LEFT SIDE */}
-                    <div className="p-8 flex flex-col items-start justify-start">
+                    <div className="py-2 px-8 flex flex-col items-start justify-start">
                         <div className="flex items-center space-x-6">
                             <Link to="https://sbss.ac.in/" target='_blank' rel='noreferrer'>
                                 <img
@@ -59,11 +59,19 @@ const Footer = () => {
                             </h1>
                         </div>
 
-                        <div className="mt-12 text-gray-200 px-5">
+                        <div className="mt-0 text-gray-200 px-5">
                             <h2 className="text-lg font-semibold mb-1 text-[#F69D25]">Have Questions?</h2>
                             <p className="flex items-center space-x-2">
                                 <Mail className="w-5 h-5 text-[#F69D25]" />
                                 <span><a href='mailto:manthan2025@sbss.ac.in?subject=Event%20Related%20Query'>manthan2025@sbss.ac.in</a></span>
+                            </p>
+                        </div>
+                        <div className="mt-4 text-gray-200 px-5 flex justify-center items-center gap-5">
+                            <h2 className="text-lg font- text-[#F69D25]">Follow Us</h2>
+                            <p className="flex items-center text-gray-300">
+                                <Link to="https://www.facebook.com/people/SBSS_official/100090144331066/" target='_blank' rel='noreferrer'> <Facebook className="w-6 h-6 mr-3 text-[#1877F2]" /></Link>
+                                <Link to="https://www.instagram.com/sbss__official/?igsh=MTBxbG1rNHc4OTQxZA%3D%3D#" target='_blank' rel='noreferrer'> <Instagram className="w-6 h-6 mr-3 text-[#E1306C]" /></Link>
+                                <Link to="https://www.linkedin.com/school/sri-balaji-college-of-engineering-&-technology-jaipur/" target='_blank' rel='noreferrer'> <Linkedin className="w-6 h-6 mr-3 text-[#0A66C2]" /></Link>
                             </p>
                         </div>
                     </div>
@@ -91,10 +99,10 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
 
             {/* Footer */}
-            <footer className="border-t relative z-10">
+            <footer footer className="border-t relative z-10" >
                 <div className="mx-auto max-w-7xl px-4 py-8 text-md text-slate-200 flex flex-col md:flex-row items-center justify-between gap-3">
                     <div>© {new Date().getFullYear()} Sri Balaji Shiksha Samiti, Jaipur</div>
                     <div>
@@ -108,8 +116,8 @@ const Footer = () => {
 
                     </div>
                 </div>
-            </footer>
-        </div>
+            </footer >
+        </div >
 
     )
 }

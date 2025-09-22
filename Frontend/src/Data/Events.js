@@ -289,19 +289,19 @@ const events = [{
 },
 {
     id: 17,
-    title: `Singing`,
+    title: `Suron Ka Sangam`,
     category: "Cultural",
     type: "Individual",
     date: '10-13-2025 11:00 PM',
     duration: "13/10/2025",
     location: "GCC Auditorium SBSS",
     tags: ["Music", "Performance", "Talent"],
-    short: "Mind battles and strategy.",
+    short: "Harmony of voice and melody.",
     description:
-        "Dive into the world of Chess where players plan every move with precision, foresight, and tactical brilliance to outsmart their opponent.",
+        "Experience the magic of Singing – a true 'Suron ka Sangam' where emotions flow through tunes, creating a soulful connection between heart and music.",
     firstPrize: "₹2,100, Trophy, Certificate",
     secondPrize: "₹1,100, Trophy, Certificate",
-    poster: "/images/Singing poster.jpg",
+    poster: "/images/SURON KA SAMGAM POSTER.jpg",
     regFee: 300,
     link: "https://docs.google.com/forms/d/e/1FAIpQLSd6la8YFofsS-ZdY7d6WvtvNp76aOq_epYmedjigUJuB63YFQ/viewform?usp=sharing&ouid=105205958087852905603"
 },
