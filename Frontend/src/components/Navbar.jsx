@@ -16,11 +16,13 @@ const Navbar = (props) => {
     setTimeout(() => {
       const el = document.getElementById(hash.replace('#', ''));
       if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
+        const yOffset = -70; // adjust for sticky navbar height
+        const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
       } else {
         window.location.hash = hash;
       }
-    }, 200); // wait for menu to close
+    }, 400); // wait longer for menu to close
   };
 
   return (
@@ -38,7 +40,7 @@ const Navbar = (props) => {
             {/* Desktop Navbar */}
             <nav className="hidden md:flex items-center gap-6 text-sm">
               <ul className="flex items-center gap-4">
-                <li className="text-slate-300 font-semibold hover:text-[#F69D25]"><Link to="https://manthanca.vercel.app/">Home</Link></li>
+                <li className="text-slate-300 font-semibold hover:text-[#F69D25]"><Link to="/">Home</Link></li>
                 <li className="text-slate-300 font-semibold hover:text-[#F69D25]"><a href="#events">Events</a></li>
                 <li className="text-slate-300 font-semibold hover:text-[#F69D25]"><Link to="https://manthanca.vercel.app/" target="_blank" rel="noopener noreferrer">CA Portal</Link></li>
                 <li className="text-slate-300 font-semibold hover:text-[#F69D25]"><a href="#">Gallery</a></li>
@@ -73,7 +75,7 @@ const Navbar = (props) => {
             </button>
             <ul className="flex flex-col gap-4 mt-4">
               <li className="text-lg font-semibold border-2 p-2 rounded-xl border-slate-300 text-center text-slate-300 hover:text-[#F69D25]" onClick={toggleMenu}>
-                <Link to="https://manthanca.vercel.app/">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li className="text-lg font-semibold border-2 p-2 rounded-xl border-slate-300 text-center text-slate-300 hover:text-[#F69D25]">
                 <a href="#events" onClick={e => handleMobileAnchorClick(e, '#events')}>Events</a>
