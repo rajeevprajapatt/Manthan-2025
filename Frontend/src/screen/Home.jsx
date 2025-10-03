@@ -10,7 +10,7 @@ import InnovationPoster from "../assets/Innovation-Poster.jpg";
 const team = [
   {
     title: "Head Organizer",
-    members: ["Ms Poonam Poonia"],
+    members: ["Mrs Poonam Poonia"],
   },
   {
     title: "Conveners",
