@@ -15,7 +15,7 @@ const events = [{
     poster: "/images/Beige Red Black Illustrative Basketball Tournament Banner .jpg",
     regFee: 1800,
     link: "https://docs.google.com/forms/d/e/1FAIpQLSdV-QIinOvoy-YBx2utP-vEhjdi8WO-2MSyiBnVVzFiNW6q0Q/viewform?usp=sharing&ouid=105205958087852905603",
-    detailDoc:"/details/Rajeev-Prajapat-resume.pdf"
+    // detailDoc:"/details/Rajeev-Prajapat-resume.pdf"
 },
 {
     id: 2,
@@ -142,7 +142,8 @@ const events = [{
     thirdPrize: "₹1,100, Certificate",
     poster: "/images/Hackathon-poster.jpg",
     regFee: 500,
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSf38vJaaflyFl1jXjO76p_b56zbNg9wrdrlf1EqdBiByHv4qg/viewform?usp=sharing&ouid=105205958087852905603"
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSf38vJaaflyFl1jXjO76p_b56zbNg9wrdrlf1EqdBiByHv4qg/viewform?usp=sharing&ouid=105205958087852905603",
+    detailDoc:"/details/Hackathon Info.pdf"
 },
 {
     id: 9,

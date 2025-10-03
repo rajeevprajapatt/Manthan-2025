@@ -171,33 +171,16 @@ const Events = () => {
                                         ))}
                                     </div>
                                     <p className="mt-3 mb-3 text-sm text-slate-700">{active.description}</p>
-                                    {/* {active.link && <label className="md:mt-3 text-sm text-slate-700 font-semibold md:pr-5">Select Institute</label>}
-                                    {active.link && <select value={institute} onChange={e => setInstitute(e.target.value)} className="mt-1 px-1 py-1 rounded-xl ring-1 ring-slate-200 text-sm w-full md:w-1/2">
-                                        <option value={null}>Select</option>
-                                        <option value={"sbss"}>Sri Balaji Shiksha Samiti, Jaipur</option>
-                                        <option value={"other"}>Other</option>
-                                    </select>} */}
-                                    <div className="mt-5 flex items-center gap-3">
-                                        {/* {active.link && institute === "sbss" && <Link to={clgForm} target="_blank" rel="noreferrer">
-                                            <button onClick={() => {
-                                                setActive(null);
-                                            }} className="px-4 py-2 rounded-xl bg-indigo-600 text-white">Register</button>
-                                        </Link>}
-                                        {active.link && institute === "other" && <Link to={active.link} target="_blank" rel="noreferrer">
-                                            <button onClick={() => {
-                                                setActive(null);
-                                                setInstitute(null);
-                                            }} className="px-4 py-2 rounded-xl bg-indigo-600 text-white">Register</button>
-                                        </Link>} */}
+                                    <div className="mt-5 flex items-center gap-3 flex-wrap">
                                         {active.link && <Link to={active.link} target="_blank" rel="noreferrer">
                                             <button onClick={() => {
                                                 setActive(null);
                                             }} className="px-4 py-2 rounded-xl bg-indigo-600 text-white">Register</button>
                                         </Link>}
-                                        {/* {active.detailDoc &&
-                                            <a href={active.detailDoc} download><button className="px-4 py-2 rounded-xl ring-1 bg-indigo-600 text-slate-300 ring-slate-200">Download</button>
+                                        {active.detailDoc &&
+                                            <a href={active.detailDoc} download><button className="px-4 py-2 rounded-xl ring-1 bg-indigo-600 text-white ring-slate-200">Event Info</button>
                                             </a>
-                                        } */}
+                                        }
                                         <button onClick={() => { setActive(null) }} className="px-4 py-2 rounded-xl ring-1 bg-indigo-600 text-slate-300 ring-slate-200">Close</button>
                                     </div>
                                 </div>
