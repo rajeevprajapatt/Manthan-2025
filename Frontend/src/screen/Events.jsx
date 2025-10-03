@@ -194,6 +194,10 @@ const Events = () => {
                                                 setActive(null);
                                             }} className="px-4 py-2 rounded-xl bg-indigo-600 text-white">Register</button>
                                         </Link>}
+                                        {/* {active.detailDoc &&
+                                            <a href={active.detailDoc} download><button className="px-4 py-2 rounded-xl ring-1 bg-indigo-600 text-slate-300 ring-slate-200">Download</button>
+                                            </a>
+                                        } */}
                                         <button onClick={() => { setActive(null) }} className="px-4 py-2 rounded-xl ring-1 bg-indigo-600 text-slate-300 ring-slate-200">Close</button>
                                     </div>
                                 </div>

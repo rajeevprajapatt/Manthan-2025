@@ -14,7 +14,8 @@ const events = [{
     secondPrize: "₹3,100, Trophy, Certificate, Silver Medal",
     poster: "/images/Beige Red Black Illustrative Basketball Tournament Banner .jpg",
     regFee: 1800,
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSdV-QIinOvoy-YBx2utP-vEhjdi8WO-2MSyiBnVVzFiNW6q0Q/viewform?usp=sharing&ouid=105205958087852905603"
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdV-QIinOvoy-YBx2utP-vEhjdi8WO-2MSyiBnVVzFiNW6q0Q/viewform?usp=sharing&ouid=105205958087852905603",
+    detailDoc:"/details/Rajeev-Prajapat-resume.pdf"
 },
 {
     id: 2,
@@ -168,7 +169,7 @@ const events = [{
     type: "Individual",
     date: '10-11-2025 10:00 AM',
     duration: "11/10/2025",
-    location: "GCC Auditorium SBSS",
+    location: "SBTTC SEMINAR HALL",
     tags: ["Cooking", "Creativity", "Fun"],
     short: "Creativity on a plate.",
     description:
@@ -186,7 +187,7 @@ const events = [{
     type: "Individual",
     date: '10-11-2025 10:00 AM',
     duration: "11/10/2025",
-    location: "GCC Auditorium SBSS",
+    location: "CIVIL Seminar Hall",
     tags: ["Entrepreneurship", "Pitching", "Innovation"],
     short: "Pitch, persuade, and conquer",
     description:
@@ -204,7 +205,7 @@ const events = [{
     type: "Individual",
     date: '10-13-2025 01:30 PM',
     duration: "13/10/2025",
-    location: "GCC Auditorium SBSS",
+    location: "PD Seminar Hall",
     tags: ["Debate", "Public Speaking", "Logic"],
     short: "Battle of ideas and intellect.",
     description:
@@ -222,7 +223,7 @@ const events = [{
     type: "Individual",
     date: '10-13-2025 5:00 PM',
     duration: "13/10/2025",
-    location: "GCC Auditorium SBSS",
+    location: "OPEN STAGE SBSS",
     tags: ["Dance", "Solo Performance", "Expression"],
     short: "One stage, one performer, endless expressions.",
     description:
@@ -240,7 +241,7 @@ const events = [{
     type: "Team",
     date: '10-13-2025 5:00 PM',
     duration: "13/10/2025",
-    location: "GCC Auditorium SBSS",
+    location: "OPEN STAGE SBSS",
     tags: ["Dance", "Group Performance", "Energy"],
     short: "United moves, unmatched energy",
     description:
@@ -258,7 +259,7 @@ const events = [{
     type: "Team",
     date: '10-13-2025 5:00 PM',
     duration: "13/10/2025",
-    location: "GCC Auditorium SBSS",
+    location: "OPEN STAGE",
     tags: ["Dance", "Duet", "Coordination"],
     short: "Two hearts, one rhythm",
     description:
@@ -276,7 +277,7 @@ const events = [{
     type: "Team",
     date: '10-13-2025 5:00 PM',
     duration: "13/10/2025",
-    location: "GCC Auditorium SBSS",
+    location: "OPEN STAGE SBSS",
     tags: ["Fashion", "Style", "Confidence"],
     short: "Confidence meets style",
     description:
@@ -294,7 +295,7 @@ const events = [{
     type: "Individual",
     date: '10-13-2025 11:00 PM',
     duration: "13/10/2025",
-    location: "GCC Auditorium SBSS",
+    location: "Auditorium SBSS",
     tags: ["Music", "Performance", "Talent"],
     short: "Harmony of voice and melody.",
     description:
@@ -312,7 +313,7 @@ const events = [{
     type: "Individual",
     date: '10-09-2025 9:30 AM',
     duration: "09/10/2025 - 11/10/2025",
-    location: "GCC Auditorium SBSS",
+    location: " Auditorium SBSS",
     tags: ["Sports", "Track & Field", "Endurance"],
     short: "Test of speed, strength, and stamina.",
     description:
@@ -330,7 +331,7 @@ const events = [{
     type: "Team",
     date: '10-09-2025 10:00 AM',
     duration: "09/10/2025 - 10/10/2025",
-    location: "GCC Auditorium SBSS",
+    location: "GARDEN BLOCK-A",
     tags: ["Drama", "SocialImpact", "StreetPlay"],
     short: "Voices of change, straight from the street.",
     description:
@@ -348,7 +349,7 @@ const events = [{
     type: "Individual",
     date: '10-09-2025 01:00 PM',
     duration: "09/10/2025",
-    location: "GCC Auditorium SBSS",
+    location: "SBTTC SEMINAR HALL",
     tags: ["Creativity", "DIYFashion", "Design"],
     short: "Wear your imagination.",
     description:
@@ -366,7 +367,7 @@ const events = [{
     type: "Individual",
     date: '10-10-2025 11:00 AM',
     duration: "10/10/2025",
-    location: "GCC Auditorium SBSS",
+    location: "SBTTC SEMINAR HALL",
     tags: ["TalentHunt", "CreativityUnleashed", "ShowYourSkill"],
     short: "Where hidden talents shine bright.",
     description:
@@ -384,7 +385,7 @@ const events = [{
     type: "Individual",
     date: '10-10-2025 01:00 AM',
     duration: "10/10/2025",
-    location: "GCC Auditorium SBSS",
+    location: "CIVIL SEMINAR HALL ",
     tags: ["Poetry", "StandUp", "Expression"],
     short: "One mic, endless voices.",
     description:
@@ -420,7 +421,7 @@ const events = [{
     type: "Individual",
     date: '10-11-2025 01:00 PM',
     duration: "11/10/2025",
-    location: "GCC Auditorium SBSS",
+    location: "Auditorium",
     tags: ["Music", "Fun", "TeamPlay"],
     short: "Where music never ends.",
     description:
@@ -451,12 +452,12 @@ const events = [{
 },
 {
     id: 26,
-    title: `Marathon (5km)`,
+    title: `Marathon (10km)`,
     category: "Sports",
     type: "Individual",
     date: '10-12-2025 05:30 AM',
     duration: "12/10/2025",
-    location: "Jhotwara to SBSS Campus",
+    location: "SBSS",
     tags: ["Fitness", "Endurance", "Community"],
     short: "Run for fitness, run for unity.",
     description:
@@ -475,7 +476,7 @@ const events = [{
     type: "Individual",
     date: '10-12-2025 09:30 AM',
     duration: "12/10/2025",
-    location: "SBSS Campus",
+    location: "GRGA SCHOOL CAMPUS",
     tags: ["SaveLives", "HealthCare", "Donation"],
     short: "Give blood, give life.",
     description:
@@ -490,7 +491,7 @@ const events = [{
     type: "Individual",
     date: '10-12-2025 09:30 AM',
     duration: "12/10/2025",
-    location: "SBSS Campus",
+    location: "SBTTC SEMINAR HALL",
     tags: ["Wellness", "PreventiveCare", "CommunityHealth"],
     short: "Your health, our priority.",
     description:

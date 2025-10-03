@@ -131,7 +131,7 @@ export default function Manthan() {
               <div className="mt-4 grid grid-cols-3 gap-4 text-center text-sm">
                 <Stat k="30+" v="Events" />
                 <Stat k="1000+" v="Participants" />
-                <Stat k="₹2L+" v="Prizes" />
+                <Stat k="₹4L+" v="Prizes" />
               </div>
             </div>
             <div className="absolute bottom-6 -left-6 h-20 w-20 rounded-3xl bg-white/40 blur-2xl" />
@@ -219,7 +219,6 @@ export default function Manthan() {
               <h3 className="text-xl font-semibold mb-2 text-[#F69D25] text-center">
                 {team[1].title}
               </h3>
-
               {/* Members List */}
               <ul className="text-slate-300 gap-x-12 md:gap-12 pl-4 
                    grid grid-cols-2 md:flex md:justify-center md:items-center list-disc">
