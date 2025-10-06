@@ -68,7 +68,7 @@ const events = [{
     firstPrize: "₹2,100, Trophy, Certificate, Gold Medal",
     secondPrize: "₹1,100, Trophy, Certificate, Silver Medal",
     poster: "/images/badminoton poster.png",
-    regFee: 800,
+    regFee: 300,
     link: "https://docs.google.com/forms/d/e/1FAIpQLScrR8fQIZdyn5T24Pfudbna0DTg1QxvjsyK4uS1909JHK9vZw/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
@@ -86,7 +86,7 @@ const events = [{
     firstPrize: "₹5,100, Trophy, Certificate, Gold Medal",
     secondPrize: "₹2,100, Trophy, Certificate, Silver Medal",
     poster: "/images/Box cricket poster.jpg",
-    regFee: 1100,
+    regFee: 600,
     link: "https://docs.google.com/forms/d/e/1FAIpQLSdEXufCfH4voQoPZki3aEdoam5RPraK2FmAxkf47JSl6EsOrQ/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
@@ -122,7 +122,7 @@ const events = [{
     firstPrize: "₹2,100, Trophy, Certificate, Gold Medal",
     secondPrize: "₹1,100, Trophy, Certificate, Silver Medal",
     poster: "/images/Chess Tournament Banner.jpg",
-    regFee: 800,
+    regFee: 300,
     link: "https://docs.google.com/forms/d/e/1FAIpQLSdGlSbqOLvWM2mYLF7nWwNaeS9n1CQHE74NawsxDZU8zKpBww/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
@@ -430,7 +430,7 @@ const events = [{
     firstPrize: "₹2,100, Certificate",
     secondPrize: "₹1,100, Certificate",
     poster: "/images/Antakshari poster.jpg",
-    regFee: 250,
+    regFee: 200,
     link: "https://docs.google.com/forms/d/e/1FAIpQLSfk6FlLsuYFVOv80qufFP9X9c0VvZw4Sa39Szy-Gt-afOldcg/viewform?usp=sharing&ouid=105205958087852905603"
 },
 {
